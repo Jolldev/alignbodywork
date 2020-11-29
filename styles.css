@@ -1,0 +1,281 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.top-section{
+    background-color: rgb(52, 58, 64);
+    width: 100%;
+}
+
+
+.marble-container{
+    background: url(marble2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* logo top left corner */
+.brand-logo{
+    border-radius: 50%;
+    height: auto;
+   margin: 10px;
+    position: relative;
+    width: 220px;
+}
+
+.brand-logo:hover{
+    box-shadow: 0 0 10px 5px rgb(133, 106, 67, .8);
+}
+
+.align-cell{
+    align-items: center;
+    height: calc(100vh - 160px);
+    text-align: center;
+}
+
+
+/* align definition */
+.align-desc{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    width: 100%;
+}
+
+/* makes "align" slightly larger than definition*/
+.align{
+    color: white;
+    font-size: 2.25rem;
+}
+
+.align-container{
+    height: 100%;
+}
+
+/* navbar on main page */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.705);
+    /* margin: 0;
+    padding: 0; */
+    position: relative;
+    width: 100%;
+}
+
+#nav .nav-link{
+    color: white;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    padding: 0 3vw;
+    text-align: right;
+    transition: .5s;
+}
+
+.nav-link:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+
+/* aligns anchor tags in the nav to right side in toggler dropdown */
+.nav-item{
+    /* margin-bottom: 3%; */
+    text-align: right;
+}
+
+/* hamburger button modifications*/
+.custom-toggler.navbar-toggler { 
+    border: 1px;
+    border-color: rgba(0, 0, 0, 0.6); 
+    margin-bottom: 4%;
+  } 
+
+button.navbar-toggler{
+    opacity: .7;
+    outline: none;
+    transition: .5s;
+}
+
+button.navbar-toggler:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.custom-toggler .navbar-toggler-icon { 
+            background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        } 
+
+
+
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Sevices on main page section */
+.massage-therapy-options{
+    background-color: rgba(218, 191, 103, 0.856);
+    padding:3%;
+    width: 100%;
+}
+
+.massage-therapy-header{
+     font-family: 'EB Garamond', serif;
+     font-size: 3rem;
+     font-weight: 600;
+     letter-spacing: 2px;
+    margin: 2% auto 5%;
+    padding: 0;
+    text-align: center;
+}
+
+.services-grid{
+    background-color: rgb(245, 247, 224);;
+    border-radius: 10px;
+       margin: 5%;
+    padding: 2%;
+}
+
+.massage-therapy-img{ 
+    margin: 4%;
+    width: 100%;
+}
+
+
+
+.brief-cell{
+    font-family: 'Roboto', sans-serif;
+    padding: 4%;
+}
+
+.treatment-label{
+font-size: 1.1rem;   
+font-weight: 600;
+margin-bottom: 1.5rem;
+}
+
+.massage-therapy-brief{
+    text-align: justify;
+    
+} 
+
+.pricing-btn,.sauna-btn{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin: 4% auto 3%;
+    transition: .5s;
+}
+
+.pricing-btn:hover,.sauna-btn:hover{
+   transform: scale(1.02);
+}
+
+/* Infrared Sauna Section */
+.infrared-sauna{
+    /* background-color: rgb(225, 228, 183); */
+    background-color: rgba(218, 191, 103, 0.856);
+    padding: 3%;
+    width: 100%;
+}
+
+.infrared-sauna-heading{
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.infrared-sauna-subheading{
+    
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+
+
+.infrared-sauna-grid{
+    background-color: rgb(52, 58, 64);
+    border-radius: 10px;
+    color: white;
+      margin: 5%;
+    padding: 2%;
+}
+
+.infrared-sauna-right{
+    text-align: center;
+}
+
+.infrared-sauna-img{
+    width: 80%;
+}
+
+.infrared-sauna-benefits{
+    margin-bottom: 10%;
+}
+
+#footer {
+    /* background-color: rgb(52, 58, 64);; */
+    background-image: url("marble2.jpg");
+    background-size: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.socials{
+    padding: 1%;
+}
+
+
+.social-icon {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0 50px;
+}
+
+
+/* .Copyright {
+  bottom: 0;
+  color: rgb(152, 215, 230);
+  font-size: .75rem;
+  margin: 20px auto 10px;
+  position: absolute;
+  width: 100%;
+} */
+
+.contact{
+    background-color: #402E2D;
+}
+
+.cta{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.25rem;
+    padding: 6%;
+    width: 100%;
+}
+
+.cta-text{
+    text-align: center;
+}
+
+.table{
+    width: 100%;
+}
+
