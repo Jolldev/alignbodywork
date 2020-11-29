@@ -1,18 +1,16 @@
 
-const marble= document.querySelector('.marble-container');
+
+const carouselInner = document.querySelector('.carousel-inner');
+const carouselImg = document.querySelector('.carousel-img');
+const topSection = document.querySelector('.top-section');
+const marble = document.querySelector('.marble-container');
 const marbleHeight = marble.offsetHeight;
 
-var test = document.querySelector('.test-box');
-var image = document.querySelector('.test');
-var align = document.querySelector('.align-cell');
-
-var imageHeight = image.offsetHeight;
-var alignHeight = align.offsetHeight;
 
 function setTest(){
    
 
-    test.style.height= window.innerHeight-marbleHeight +"px";
+    carouselImg.style.height= window.innerHeight-marbleHeight +"px";
     // image.style.height = test.offsetHeight - alignHeight + "px";
     // console.log(test.offsetHeight);
     // console.log(alignHeight);
