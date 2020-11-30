@@ -47,11 +47,6 @@ body{
  z-index: -1; */
 }
 
-.carousel-inner{
-    border: 1px solid red;
-}
-
-
 /* align definition */
 .align-desc{
     color: black;
@@ -105,7 +100,7 @@ body{
 .custom-toggler.navbar-toggler { 
     border: 1px;
     border-color: rgba(0, 0, 0, 0.6); 
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
   } 
 
 button.navbar-toggler{
@@ -291,3 +286,14 @@ margin-bottom: 1.5rem;
     width: 100%;
 }
 
+@media (max-width:768px) {
+.navbar{
+    background-color: transparent;
+ 
+}
+
+#nav .nav-link{
+    color: black;
+    padding: 10px 0;
+}
+  }
