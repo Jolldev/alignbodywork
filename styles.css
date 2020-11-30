@@ -1,13 +1,19 @@
 
 body{
+      height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
 .top-section{
+ 
+    /* height: 100vh; */
     width: 100%;
+
 }
+
+
 
 .marble-container{
     background: url(marble2.jpg);
@@ -37,15 +43,14 @@ body{
 .carousel-img{
     object-fit: cover;
  width: 100%;
- position: relative;
- z-index: -1;
+ /* position: relative;
+ z-index: -1; */
 }
 
 .carousel-inner{
+    border: 1px solid red;
 }
 
-.carousel-item{
-}
 
 /* align definition */
 .align-desc{
