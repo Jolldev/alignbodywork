@@ -1,6 +1,9 @@
 
 body{
-    
+    background: url(marble2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
       height: 100%;
     margin: 0;
     padding: 0;
@@ -18,9 +21,9 @@ body{
 
 
 .marble-container{
-    background: url(marble2.jpg);
+    /* background: url(marble2.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     
     width: 100%;
     text-align: center;
@@ -136,7 +139,7 @@ button.navbar-toggler:hover{
 
 /* Sevices on main page section */
 .massage-therapy-options{
-    background-color: rgba(238, 210, 119, 0.829);
+    /* background-color: rgb(204, 182, 109); */
     padding:3%;
     width: 100%;
 }
@@ -150,9 +153,10 @@ button.navbar-toggler:hover{
 }
 
 .services-grid{
-    background-color: rgb(238, 235, 208);
+    background-color: rgb(199, 185, 103);
     border-radius: 10px;
-       margin: 5%;
+    box-shadow: 0 0 30px 2px rgb(29, 26, 15);
+       margin: 1% 5%;
     padding: 2%;
 }
 
@@ -193,7 +197,7 @@ margin-bottom: 1.5rem;
 /* Infrared Sauna Section */
 .infrared-sauna{
     /* background-color: rgb(225, 228, 183); */
-    background-color: rgba(218, 191, 103, 0.692);
+    /* background-color: rgba(218, 191, 103, 0.692); */
     padding: 3%;
     width: 100%;
 }
@@ -215,8 +219,9 @@ margin-bottom: 1.5rem;
 .infrared-sauna-grid{
     background-color: rgb(52, 58, 64);
     border-radius: 10px;
+    box-shadow: 0 0 30px 2px rgb(31, 30, 30);
     color: white;
-      margin: 5%;
+      margin: 1% 5% 5%;
     padding: 2%;
 }
 
@@ -234,8 +239,8 @@ margin-bottom: 1.5rem;
 
 #footer {
     /* background-color: rgb(52, 58, 64);; */
-    background-image: url("marble2.jpg");
-    background-size: 100%;
+    /* background-image: url("marble2.jpg");
+    background-size: 100%; */
     height: 15vh;
     margin: 0;
     padding: 0;
@@ -266,14 +271,14 @@ margin-bottom: 1.5rem;
 } */
 
 .contact{
-    background-color: #402E2D;
+    background-color: #07030f;
 }
 
 .cta{
     color: white;
     font-family: 'EB Garamond', serif;
     font-size: 1.25rem;
-    padding: 6%;
+    padding: 3%;
     width: 100%;
 }
 
@@ -283,7 +288,7 @@ margin-bottom: 1.5rem;
 
 .table{
     border-radius: 20px;
-    width: 100%;
+    width: 80%;
 }
 
 @media (max-width:768px) {
