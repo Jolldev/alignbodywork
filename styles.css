@@ -279,7 +279,9 @@ margin-bottom: 1.5rem;
     font-family: 'EB Garamond', serif;
     font-size: 1.25rem;
     padding: 3%;
+    text-align: center;
     width: 100%;
+    text-align: center;
 }
 
 .cta-text{
@@ -292,6 +294,13 @@ margin-bottom: 1.5rem;
 }
 
 @media (max-width:768px) {
+
+body{
+ 
+    background-size: cover;
+  
+}
+
 .navbar{
     background-color: transparent;
  
@@ -303,12 +312,16 @@ margin-bottom: 1.5rem;
 }
 
 .services-grid, .infrared-sauna-grid{
-    margin: 0;
+    margin: 6% 0;
 }
 
 .massage-therapy-heading, .infrared-sauna-heading{
     font-size: 2.5rem;
     margin: 8% 0;
 
+}
+
+.cta{
+    margin: 3% auto;
 }
   }
