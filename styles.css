@@ -298,7 +298,7 @@ margin-bottom: 1.5rem;
 body{
  
         background: url(marble2.jpg);
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
