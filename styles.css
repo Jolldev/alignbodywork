@@ -298,7 +298,7 @@ margin-bottom: 1.5rem;
 body{
  
         background: url(marble-mobile.jpg);
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
