@@ -297,8 +297,10 @@ margin-bottom: 1.5rem;
 
 body{
  
+        background: url(marble-mobile.jpg);
     background-size: cover;
-  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .navbar{
