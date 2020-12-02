@@ -183,6 +183,7 @@ button.navbar-toggler:hover{
 }
 
 .massage-therapy-img{ 
+    border-radius: 15px;
     margin: 4%;
     width: 100%;
 }
@@ -197,7 +198,7 @@ button.navbar-toggler:hover{
 .treatment-label{
 font-size: 1.1rem;   
 font-weight: 600;
-margin-bottom: 1.5rem;
+margin-bottom: .5rem;
 }
 
 .massage-therapy-brief{
@@ -256,6 +257,7 @@ margin-bottom: 1.5rem;
 }
 
 .infrared-sauna-img{
+    border-radius: 15px;
     width: 80%;
 }
 
@@ -281,7 +283,7 @@ margin-bottom: 1.5rem;
 
 
 .social-icon {
-  color: white;
+  color: rgb(145, 100, 64);
   font-size: 1.5rem;
   padding: 0 30px;
 }
@@ -304,7 +306,7 @@ margin-bottom: 1.5rem;
     color: white;
     font-family: 'EB Garamond', serif;
     font-size: 1.25rem;
-    padding: 3%;
+    padding: 5% 3%;
     text-align: center;
     width: 100%;
     text-align: center;
@@ -317,6 +319,10 @@ margin-bottom: 1.5rem;
 .table{
     border-radius: 20px;
     width: 80%;
+}
+
+.table-optional-mobile{
+    display: none;
 }
 
 @media (max-width:768px) {
@@ -360,5 +366,14 @@ margin-bottom: 1.5rem;
 
 .cta{
     margin: 3% auto;
+}
+
+.table-optional-mobile{
+    display: block;
+    padding: 5% 0;
+}
+
+.table-optional-desktop{
+    display: none;
 }
   }
