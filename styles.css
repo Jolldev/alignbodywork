@@ -3,8 +3,6 @@
   position: fixed; 
   top: 0; 
   left: 0; 
-  /* height: 100vh;
-  width: 100%; */
 	
   /* Preserve aspet ratio */
   min-width: 100%;
@@ -13,40 +11,19 @@
 }
 
 body{
-    /* background: url(marble2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
       height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.marble-bg{
-    /* background: url(marble2.jpg);
-    background-size: auto 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    /* height: 100vh;
-    position: absolute; */
-    /* width: 100%; */
-}
-
 .top-section{
- 
-    /* height: 100vh; */
     width: 100%;
-
 }
 
 
 
 .marble-container{
-    /* background: url(marble2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
-    
     width: 100%;
     text-align: center;
 }
@@ -66,18 +43,14 @@ body{
 }
 
 /* carousel */
-
 .carousel-img{
     object-fit: cover;
  width: 100%;
- /* position: relative;
- z-index: -1; */
 }
 
 /* align definition */
 .align-desc{
     color: black;
-    
     font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
     width: 100%;
@@ -94,8 +67,6 @@ body{
 /* navbar on main page */
 .navbar{
     background-color: rgba(0, 0, 0, 0.705);
-    /* margin: 0;
-    padding: 0; */
     position: relative;
     width: 100%;
 }
@@ -119,7 +90,6 @@ body{
 
 /* aligns anchor tags in the nav to right side in toggler dropdown */
 .nav-item{
-    /* margin-bottom: 3%; */
     text-align: right;
 }
 
@@ -147,9 +117,6 @@ button.navbar-toggler:hover{
         } 
 
 
-
-
-
 @keyframes appear{
     0%{
         opacity: 0;
@@ -161,7 +128,6 @@ button.navbar-toggler:hover{
 
 /* Sevices on main page section */
 .massage-therapy-options{
-    /* background-color: rgb(204, 182, 109); */
     padding:3%;
     width: 100%;
 }
@@ -187,7 +153,6 @@ button.navbar-toggler:hover{
     margin: 4%;
     width: 100%;
 }
-
 
 
 .brief-cell{
@@ -223,8 +188,6 @@ margin-bottom: .5rem;
 
 /* Infrared Sauna Section */
 .infrared-sauna{
-    /* background-color: rgb(225, 228, 183); */
-    /* background-color: rgba(218, 191, 103, 0.692); */
     padding: 3%;
     width: 100%;
 }
@@ -240,7 +203,6 @@ margin-bottom: .5rem;
     font-size: 1.5rem;
     margin-bottom: 5%;
 }
-
 
 
 .infrared-sauna-grid{
@@ -266,9 +228,6 @@ margin-bottom: .5rem;
 }
 
 #footer {
-    /* background-color: rgb(52, 58, 64);; */
-    /* background-image: url("marble2.jpg");
-    background-size: 100%; */
     height: 15vh;
     margin: 0;
     padding: 0;
@@ -325,20 +284,12 @@ margin-bottom: .5rem;
     display: none;
 }
 
-@media (max-width:768px) {
 
-/* body{
- 
-        background: url(marble2.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-} */
+@media (max-width:768px) {
 
 .navbar{
     background-color: transparent;
- 
-}
+ }
 
 #nav .nav-link{
     color: black;
