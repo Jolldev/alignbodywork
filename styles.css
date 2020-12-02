@@ -1,15 +1,37 @@
 
+.marble-bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  /* height: 100vh;
+  width: 100%; */
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 body{
-    background: url(marble2.jpg);
+    /* background: url(marble2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
       height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
+.marble-bg{
+    /* background: url(marble2.jpg);
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* height: 100vh;
+    position: absolute; */
+    /* width: 100%; */
+}
 
 .top-section{
  
@@ -295,13 +317,13 @@ margin-bottom: 1.5rem;
 
 @media (max-width:768px) {
 
-body{
+/* body{
  
-        background: url(marble-mobile.jpg);
+        background: url(marble2.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 .navbar{
     background-color: transparent;
