@@ -201,7 +201,7 @@ margin-bottom: 1.5rem;
 }
 
 .massage-therapy-brief{
-    text-align: justify;
+    text-align: left;
     
 } 
 
@@ -210,6 +210,10 @@ margin-bottom: 1.5rem;
     font-size: 1.2rem;
     margin: 4% auto 3%;
     transition: .5s;
+}
+
+.btn-optional-mobile{
+    display: none;
 }
 
 .pricing-btn:hover,.sauna-btn:hover{
@@ -277,9 +281,9 @@ margin-bottom: 1.5rem;
 
 
 .social-icon {
-  color: black;
+  color: white;
   font-size: 1.5rem;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 
@@ -343,6 +347,15 @@ margin-bottom: 1.5rem;
     font-size: 2.5rem;
     margin: 8% 0;
 
+}
+
+.btn-optional-desktop{
+    display: none;
+}
+
+.btn-optional-mobile{
+    display: block;
+    padding: 5%;
 }
 
 .cta{
