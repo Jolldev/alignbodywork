@@ -20,7 +20,7 @@ body{
 /* logo top left corner */
 .brand-logo{
     border-radius: 50%;
-    height: 130px;
+    height: 150px;
    margin: 10px;
 }
 
@@ -32,6 +32,13 @@ body{
 .carousel-img{
     object-fit: cover;
     width: 100%;
+}
+
+.carousel-indicators li{
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
+    margin: 0 15px;
 }
 
 /* navbar on main page */
@@ -83,6 +90,9 @@ button.navbar-toggler:hover{
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
         } 
 
+#navbarNavDropdown{
+    transition: .8s;
+}
 
 /* Treatment options & Infrared Sauna sections*/
 .massage-therapy-options,.infrared-sauna{
@@ -172,7 +182,7 @@ margin-bottom: .5rem;
     color: white;
     font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
-    padding: 3% 0;
+    padding-top: 3%;
 }
 
 .table{
@@ -191,6 +201,11 @@ margin-bottom: .5rem;
 
 @media (max-width:768px) {
 
+.brand-logo{
+    margin: 15px 0 0;
+    height:160px;
+}
+
 .navbar{
     background-color: transparent;
  }
@@ -200,6 +215,10 @@ margin-bottom: .5rem;
     letter-spacing: normal;
     font-weight: 600;
     padding: 10px 0;
+}
+
+.carousel{
+    margin-bottom: 8%;
 }
 
 .services-grid, .infrared-sauna-grid{
@@ -222,7 +241,11 @@ margin-bottom: .5rem;
 }
 
 .cta{
-    margin: 3% auto;
+    margin-top: 8%;
+}
+
+.cta-text p{
+    margin: 5% auto 3%;
 }
 
 .table-optional-mobile{
