@@ -193,6 +193,9 @@ margin-bottom: .5rem;
     display: none;
 }
 
+.socials{
+width:100%
+}
 
 .social-icon {
   color: rgb(179, 158, 44);
