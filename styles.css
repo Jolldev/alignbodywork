@@ -193,10 +193,12 @@ margin-bottom: .5rem;
     display: none;
 }
 
+
 .social-icon {
-  color: rgb(145, 100, 64);
+  color: rgb(179, 158, 44);
   font-size: 1.5rem;
-  padding: 0 30px;
+  margin: 10px;
+  padding: 20px;
 }
 
 @media (max-width:768px) {
