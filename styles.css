@@ -21,7 +21,7 @@ body{
 .brand-logo{
     border-radius: 50%;
     height: 150px;
-   margin: 10px;
+    margin: 10px;
 }
 
 .brand-logo:hover{
@@ -34,6 +34,12 @@ body{
     width: 100%;
 }
 
+/* hides next/prev carousel controls */
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    display: none;
+}
+
+/* modifies carousel indicators */
 .carousel-indicators li{
     border-radius: 50%;
     width:10px;
@@ -101,6 +107,11 @@ button.navbar-toggler:hover{
     width: 100%;
 }
 
+.infrared-sauna-subheading{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
 .massage-therapy-heading,.infrared-sauna-heading{
      font-size: 3rem;
     margin: 2% auto 5%;
@@ -115,6 +126,15 @@ button.navbar-toggler:hover{
     padding: 2%;
 }
 
+.infrared-sauna-grid{
+    background-color: rgb(52, 58, 64);
+    border-radius: 10px;
+    box-shadow: 0 0 30px 2px rgb(31, 30, 30);
+    color: white;
+    margin: 1% 5% 5%;
+    padding: 2%;
+}
+
 .massage-therapy-img,.infrared-sauna-img{ 
     border-radius: 15px;
     margin: 4%;
@@ -126,7 +146,6 @@ font-size: 1.1rem;
 font-weight: 600;
 margin-bottom: .5rem;
 }
-
 
 .pricing-btn,.sauna-btn{
     font-family: 'EB Garamond', serif;
@@ -143,28 +162,6 @@ margin-bottom: .5rem;
    transform: scale(1.02);
 }
 
-/* Infrared Sauna Section */
-
-
-.infrared-sauna-subheading{
-    font-size: 1.5rem;
-    margin-bottom: 5%;
-}
-
-
-.infrared-sauna-grid{
-    background-color: rgb(52, 58, 64);
-    border-radius: 10px;
-    box-shadow: 0 0 30px 2px rgb(31, 30, 30);
-    color: white;
-    margin: 1% 5% 5%;
-    padding: 2%;
-}
-
-/* #footer {
-    height: 15vh;
-} */
-
 /* .Copyright {
   bottom: 0;
   color: rgb(152, 215, 230);
@@ -176,13 +173,24 @@ margin-bottom: .5rem;
 
 .contact{
     background-color: rgb(27, 5, 11);
+    padding: 3%;
 }
 
 .cta{
     color: white;
     font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    
+}
+
+.cta-grid{
+    gap:5%;
+    
+}
+
+.reach-out{
     font-size: 1.5rem;
-    padding-top: 3%;
+    /* margin: 5%; */
 }
 
 .table{
@@ -192,7 +200,6 @@ margin-bottom: .5rem;
 .table-optional-mobile{
     display: none;
 }
-
 
 .social-icon {
   color: rgb(179, 158, 44);
@@ -242,16 +249,16 @@ margin-bottom: .5rem;
 }
 
 .cta{
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
-.cta-text p{
-    margin: 5% auto 3%;
+.cta-text h2{
+    margin: 2% auto;
 }
 
 .table-optional-mobile{
     display: block;
-    padding: 5% 0;
+    margin: 10% 0;
 }
 
 .table-optional-desktop{
