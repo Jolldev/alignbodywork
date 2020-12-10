@@ -13,14 +13,11 @@ body{
     padding: 0;
 }
 
-.top-section{
-    width: 100%;
-}
 
 /* logo top left corner */
 .brand-logo{
     border-radius: 50%;
-    height: 150px;
+    height: 140px;
     margin: 10px;
 }
 
@@ -29,9 +26,11 @@ body{
 }
 
 /* carousel */
+
+
 .carousel-img{
     object-fit: cover;
-    width: 100%;
+    width: 90%;
 }
 
 /* hides next/prev carousel controls */
@@ -47,6 +46,19 @@ body{
     margin: 0 15px;
 }
 
+
+.caption-text{
+font-size: 2.5vw;
+font-weight: 500;
+ font-family: 'EB Garamond', serif;
+ letter-spacing: 1px;
+position: absolute;
+text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
+top: 10%;
+width: 100%;
+}
+
+
 /* navbar on main page */
 .navbar{
     background-color: rgba(0, 0, 0, 0.705);
@@ -60,12 +72,15 @@ body{
     letter-spacing: 1.8px;
     padding: 0 3vw;
     text-align: right;
+    
     transition: .5s;
 }
 
 .nav-link:hover{
+    
     color: black;
     transform: scale(1.1);
+    text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
 }
 
 
@@ -101,9 +116,15 @@ button.navbar-toggler:hover{
 }
 
 /* Treatment options & Infrared Sauna sections*/
+
+.massage-therapy-options{
+    margin-top: 4%;
+}
+
 .massage-therapy-options,.infrared-sauna{
     font-family: 'Roboto', sans-serif;
-    padding:3%;
+    font-size: 1.2rem;
+    padding:4% 10%;
     width: 100%;
 }
 
@@ -122,8 +143,8 @@ button.navbar-toggler:hover{
     background-color: rgb(199, 185, 103);
     border-radius: 10px;
     box-shadow: 0 0 30px 2px rgb(29, 26, 15);
-    margin: 1% 5%;
-    padding: 2%;
+    /* margin: 1% 5%; */
+    padding: 5%;
 }
 
 .infrared-sauna-grid{
@@ -131,13 +152,13 @@ button.navbar-toggler:hover{
     border-radius: 10px;
     box-shadow: 0 0 30px 2px rgb(31, 30, 30);
     color: white;
-    margin: 1% 5% 5%;
-    padding: 2%;
+    /* margin: 1% 5% 0; */
+    padding: 5%;
 }
 
 .massage-therapy-img,.infrared-sauna-img{ 
     border-radius: 15px;
-    margin: 4%;
+    margin: 6%;
     width: 100%;
 }
 
@@ -145,13 +166,14 @@ button.navbar-toggler:hover{
 font-size: 1.1rem;   
 font-weight: 600;
 margin-bottom: .5rem;
+
 }
 
 .pricing-btn,.sauna-btn{
     font-family: 'EB Garamond', serif;
-    font-size: 1.2rem;
-    margin: 4% auto 3%;
-    transition: .5s;
+    font-size: 1.5rem;
+    margin: 4% auto 1%;
+    transition: .3s;
 }
 
 .btn-optional-mobile{
@@ -160,6 +182,34 @@ margin-bottom: .5rem;
 
 .pricing-btn:hover,.sauna-btn:hover{
    transform: scale(1.02);
+}
+
+/* Testimonial Section */
+.testimonials{
+    width: 100%;
+}
+
+.testimonial-text{
+    margin: 4%;
+}
+
+.testimonial-cell{
+    background-color: rgb(199, 185, 103);
+    border-radius: 15px;
+    box-shadow: 0 0 30px 2px rgb(29, 26, 15);
+    margin: 0 auto;
+    padding: 4%;
+}
+
+.testimonial-header{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.testimonial-quote{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 1.25rem;
 }
 
 /* .Copyright {
@@ -172,7 +222,8 @@ margin-bottom: .5rem;
 } */
 
 .contact{
-    background-color: rgb(27, 5, 11);
+    background-color: rgb(18, 20, 22);
+    margin-top: 2%;
     padding: 3%;
 }
 
@@ -207,14 +258,23 @@ margin-bottom: .5rem;
   padding: 0 20px;
 }
 
-@media (max-width:768px) {
+@media (max-width:991px){
+
+.massage-therapy-brief{
+    margin-bottom: 15%;
+}
+}
+
+@media (max-width:767px){
+
+    
 
 .brand-logo{
     margin: 15px 0 0;
     height:160px;
 }
 
-.navbar{
+  .navbar{
     background-color: transparent;
  }
 
@@ -225,8 +285,28 @@ margin-bottom: .5rem;
     padding: 10px 0;
 }
 
+
+.carousel-img{
+    width: 100%;
+}
+
+
 .carousel{
     margin-bottom: 8%;
+}
+
+.caption-text{
+font-size: 3.2vw;
+top: 20%;
+}
+
+.massage-therapy-options,.infrared-sauna{
+    padding:4% 1%;
+}
+
+.container-fluid{
+    padding-right: 4%; 
+    padding-left: 4%; 
 }
 
 .services-grid, .infrared-sauna-grid{
@@ -236,8 +316,9 @@ margin-bottom: .5rem;
 .massage-therapy-heading, .infrared-sauna-heading{
     font-size: 2.5rem;
     margin: 8% 0;
-
 }
+
+
 
 .btn-optional-desktop{
     display: none;
@@ -264,4 +345,9 @@ margin-bottom: .5rem;
 .table-optional-desktop{
     display: none;
 }
+
+.testimonial-text{
+    margin: 8% 0;
+}
   }
+
