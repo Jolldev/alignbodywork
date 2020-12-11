@@ -30,7 +30,7 @@ body{
 
 .carousel-img{
     object-fit: cover;
-    width: 90%;
+    width: 100%;
 }
 
 /* hides next/prev carousel controls */
@@ -48,7 +48,7 @@ body{
 
 
 .caption-text{
-font-size: 2.5vw;
+font-size: 3vw;
 font-weight: 500;
  font-family: 'EB Garamond', serif;
  letter-spacing: 1px;
@@ -241,7 +241,23 @@ margin-bottom: .5rem;
 
 .reach-out{
     font-size: 1.5rem;
+    padding: 5%;
     /* margin: 5%; */
+}
+
+.green-bay{
+    color: rgb(85, 170, 77);
+    font-size: 1.6rem;
+}
+
+.phone-number{
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+
+.phone-number:hover{
+    text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
+    text-decoration: none;
 }
 
 .table{
@@ -258,10 +274,23 @@ margin-bottom: .5rem;
   padding: 0 20px;
 }
 
+.social-icon:hover{
+    color: rgb(241, 225, 133);
+    text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
+}
+
 @media (max-width:991px){
 
 .massage-therapy-brief{
     margin-bottom: 15%;
+}
+
+.infrared-sauna-heading{
+    font-size: 2.5rem;
+}
+
+.infrared-sauna-subheading{
+    font-size: 1.25rem;
 }
 }
 
