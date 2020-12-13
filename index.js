@@ -44,5 +44,5 @@ $('.testimonial-cell').each(function () {
     maxHeight = Math.max(maxHeight, $(this).outerHeight());
 });
 $('.quote-1, .quote-2, .quote-3').css({ height: maxHeight + 'px' });
-
-
+// document.querySelectorAll('.testimonial-content').style.verticalAlign = "middle;"
+// $('.testimonial-content').addClass('.align-vertical');

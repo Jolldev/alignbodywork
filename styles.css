@@ -1,3 +1,40 @@
+:root {
+  --section-padding: 4% ;
+  --section-margin: 5%;
+  --serif-font: 'EB Garamond', serif;
+  --sans-serif-1: 'Roboto', sans-serif;
+  --sans-serif-2: 'Open Sans', sans-serif;
+  --light-font: white;
+  --bg-glow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+.gold-bg{
+    background-color: rgb(199, 185, 103);
+    border-radius: 10px;
+    box-shadow: 0 0 30px 2px rgb(29, 26, 15);
+}
+
+.dark-bg{
+    background-color: rgb(52, 58, 64);
+    border-radius: 10px;
+    box-shadow: 0 0 30px 2px rgb(31, 30, 30);
+    color: var(--light-font);
+}
+
+.bg-glow:hover{
+    text-decoration: none;
+    text-shadow: var(--bg-glow);
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
 /* Full site marble background image */
 .marble-bg {
   position: fixed; 
@@ -8,26 +45,20 @@
   z-index: -1;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
 
 /* logo top left corner */
 .brand-logo{
     border-radius: 50%;
     height: 140px;
     margin: 10px;
+    transition: .5s;
 }
 
 .brand-logo:hover{
-    box-shadow: 0 0 10px 5px rgb(133, 106, 67, .8);
+    box-shadow: var(--bg-glow);
 }
 
 /* carousel */
-
-
 .carousel-img{
     object-fit: cover;
     width: 100%;
@@ -46,11 +77,10 @@ body{
     margin: 0 15px;
 }
 
-
 .caption-text{
 font-size: 3vw;
 font-weight: 500;
- font-family: 'EB Garamond', serif;
+ font-family: var(--serif-font);
  letter-spacing: 1px;
 position: absolute;
 text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
@@ -65,24 +95,15 @@ width: 100%;
 }
 
 #nav .nav-link{
-    color: white;
+    color: var(--light-font);
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--sans-serif-2);
     font-size: 1rem;
     letter-spacing: 1.8px;
     padding: 0 3vw;
     text-align: right;
-    
     transition: .5s;
 }
-
-.nav-link:hover{
-    
-    color: black;
-    transform: scale(1.1);
-    text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
-}
-
 
 /* aligns anchor tags in the nav to right side in toggler dropdown */
 .nav-item{
@@ -116,16 +137,25 @@ button.navbar-toggler:hover{
 }
 
 /* Treatment options & Infrared Sauna sections*/
-
-.massage-therapy-options{
-    margin-top: 4%;
+.massage-therapy-options,.infrared-sauna{
+    font-family: var(--sans-serif-1);
+    font-size: 1.2rem;
+    width: 100%;
 }
 
-.massage-therapy-options,.infrared-sauna{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    padding:4% 10%;
-    width: 100%;
+.services-grid{
+    margin: var(--section-margin);
+    padding: var(--section-padding);
+}
+
+.infrared-text{
+    height: 100%;
+}
+
+.infrared-sauna-grid{
+    margin: var(--section-margin);
+    margin-bottom: 0;
+    padding: var(--section-padding);
 }
 
 .infrared-sauna-subheading{
@@ -133,27 +163,14 @@ button.navbar-toggler:hover{
     margin-bottom: 5%;
 }
 
+.infrared-sauna-benefits-mobile{
+    display: none;
+}
+
 .massage-therapy-heading,.infrared-sauna-heading{
      font-size: 3rem;
     margin: 2% auto 5%;
     padding: 0;
-}
-
-.services-grid{
-    background-color: rgb(199, 185, 103);
-    border-radius: 10px;
-    box-shadow: 0 0 30px 2px rgb(29, 26, 15);
-    /* margin: 1% 5%; */
-    padding: 5%;
-}
-
-.infrared-sauna-grid{
-    background-color: rgb(52, 58, 64);
-    border-radius: 10px;
-    box-shadow: 0 0 30px 2px rgb(31, 30, 30);
-    color: white;
-    /* margin: 1% 5% 0; */
-    padding: 5%;
 }
 
 .massage-therapy-img,.infrared-sauna-img{ 
@@ -165,12 +182,12 @@ button.navbar-toggler:hover{
 .treatment-label{
 font-size: 1.1rem;   
 font-weight: 600;
+letter-spacing: .8px;
 margin-bottom: .5rem;
-
 }
 
 .pricing-btn,.sauna-btn{
-    font-family: 'EB Garamond', serif;
+    font-family: var(--serif-font);
     font-size: 1.5rem;
     margin: 4% auto 1%;
     transition: .3s;
@@ -181,35 +198,36 @@ margin-bottom: .5rem;
 }
 
 .pricing-btn:hover,.sauna-btn:hover{
-   transform: scale(1.02);
+   transform: scale(.98);
 }
 
 /* Testimonial Section */
-.testimonials{
-    width: 100%;
-}
 
-.testimonial-text{
-    margin: 4%;
-}
+/*keeps box shadow from being cut off*/
+/* .carousel-inner{
+    overflow: visible;
+} */
 
 .testimonial-cell{
-    background-color: rgb(199, 185, 103);
-    border-radius: 15px;
-    box-shadow: 0 0 30px 2px rgb(29, 26, 15);
-    margin: 0 auto;
+    font-family: 'Sorts Mill Goudy', serif;
     padding: 4%;
 }
 
+.testimonial-box{
+    padding: var(--section-margin)
+}
+
+/* .testimonial-content{
+    display: inline-block;
+} */
+
 .testimonial-header{
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 }
 
 .testimonial-quote{
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 /* .Copyright {
@@ -223,15 +241,14 @@ margin-bottom: .5rem;
 
 .contact{
     background-color: rgb(18, 20, 22);
-    margin-top: 2%;
+    /* margin-top: var(--section-margin); */
     padding: 3%;
 }
 
 .cta{
-    color: white;
-    font-family: 'EB Garamond', serif;
+    color: var(--light-font);
+    font-family: var(--serif-font);
     font-size: 1.2rem;
-    
 }
 
 .cta-grid{
@@ -241,48 +258,47 @@ margin-bottom: .5rem;
 
 .reach-out{
     font-size: 1.5rem;
+    line-height: 1.6;
     padding: 5%;
-    /* margin: 5%; */
 }
 
 .green-bay{
     color: rgb(85, 170, 77);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .phone-number{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 10%;
 }
 
-.phone-number:hover{
-    text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
-    text-decoration: none;
-}
-
-.table{
+.massage-table{
     border-radius: 20px;
+    width: 100%;
 }
 
-.table-optional-mobile{
+.massage-table-mobile{
     display: none;
 }
 
 .social-icon {
-  color: rgb(179, 158, 44);
+  color: rgb(241, 225, 133);
   font-size: 1.5rem;
   padding: 0 20px;
 }
 
 .social-icon:hover{
     color: rgb(241, 225, 133);
-    text-shadow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
 }
 
 @media (max-width:991px){
 
 .massage-therapy-brief{
     margin-bottom: 15%;
+}
+
+.infrared-text{
+    text-align: center;
 }
 
 .infrared-sauna-heading{
@@ -292,18 +308,59 @@ margin-bottom: .5rem;
 .infrared-sauna-subheading{
     font-size: 1.25rem;
 }
+
+.infrared-sauna-benefits-desktop{
+    display: none;
+}
+
+.infrared-sauna-benefits-mobile{
+    display: block;
+}
+
+.btn-optional-desktop{
+    display: none;
+}
+
+.btn-optional-mobile{
+    display: block;
+    padding: 2%;
+}
 }
 
 @media (max-width:767px){
 
-    
+ 
+:root {
+  --section-padding: 4% 3%;
+  --section-margin: 15% 0;
+}
+
+.gold-bg{
+    box-shadow: 0 0 10px 1px rgb(39, 35, 20);
+}
+
+.dark-bg{
+    box-shadow: 0 0 10px 1px rgb(31, 30, 30);
+}
+
+
+.services-grid{
+    margin: var(--section-margin);
+    padding: var(--section-padding);
+}
+
+.infrared-sauna-grid{
+     margin: var(--section-margin);
+     margin-bottom: 0;
+    padding: var(--section-padding);
+}
 
 .brand-logo{
     margin: 15px 0 0;
     height:160px;
 }
 
-  .navbar{
+.navbar{
     background-color: transparent;
  }
 
@@ -314,32 +371,9 @@ margin-bottom: .5rem;
     padding: 10px 0;
 }
 
-
-.carousel-img{
-    width: 100%;
-}
-
-
-.carousel{
-    margin-bottom: 8%;
-}
-
 .caption-text{
 font-size: 3.2vw;
 top: 20%;
-}
-
-.massage-therapy-options,.infrared-sauna{
-    padding:4% 1%;
-}
-
-.container-fluid{
-    padding-right: 4%; 
-    padding-left: 4%; 
-}
-
-.services-grid, .infrared-sauna-grid{
-    margin: 6% 0;
 }
 
 .massage-therapy-heading, .infrared-sauna-heading{
@@ -349,34 +383,26 @@ top: 20%;
 
 
 
-.btn-optional-desktop{
-    display: none;
-}
-
-.btn-optional-mobile{
-    display: block;
-    padding: 5%;
-}
-
-.cta{
+/* .cta{
     margin-top: 6%;
-}
+} */
 
 .cta-text h2{
     margin: 2% auto;
 }
 
-.table-optional-mobile{
+.massage-table-mobile{
     display: block;
     margin: 10% 0;
 }
 
-.table-optional-desktop{
+.massage-table-desktop{
     display: none;
 }
 
-.testimonial-text{
-    margin: 8% 0;
+.testimonial-cell{
+    line-height: 1.1;
+    padding: 5%;
 }
   }
 
