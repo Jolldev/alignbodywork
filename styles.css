@@ -139,7 +139,7 @@ button.navbar-toggler:hover{
 }
 
 /* Treatment options & Infrared Sauna sections*/
-.massage-therapy-options,.infrared-sauna{
+.massage-therapy-options,.infrared-sauna-main{
     font-family: var(--sans-serif-1);
     font-size: 1.2rem;
     width: 100%;
@@ -150,32 +150,28 @@ button.navbar-toggler:hover{
     padding: var(--section-padding);
 }
 
-/* .infrared-text{
-    height: 100%;
-} */
-
-.infrared-sauna-grid{
+.infrared-grid-main{
     margin: var(--section-margin);
     margin-bottom: 0;
     padding: var(--section-padding);
 }
 
-.infrared-sauna-subheading{
+.infrared-subheading-main{
     font-size: 1.5rem;
     margin-bottom: 5%;
 }
 
-.infrared-sauna-benefits-mobile{
+.infrared-benefits-mobile-main{
     display: none;
 }
 
-.massage-therapy-heading,.infrared-sauna-heading{
+.massage-therapy-heading,.infrared-heading-main{
      font-size: 3rem;
     margin: 2% auto 5%;
     padding: 0;
 }
 
-.massage-therapy-img,.infrared-sauna-img{ 
+.massage-therapy-img,.infrared-img-main{ 
     border-radius: 15px;
     margin: 6%;
     width: 100%;
@@ -284,12 +280,12 @@ margin-bottom: .5rem;
     color: rgb(241, 225, 133);
 }
 
-/* About me page */
-.about{
+/* About me & Infrared sauna page */
+.about,.infrared-sauna-page{
     width: 100%;
 }
 
-.about-box{
+.about-box,.infrared-box{
     margin: var(--section-margin);
     padding: var(--section-padding);
 }
@@ -301,10 +297,25 @@ margin-bottom: .5rem;
     width: 30%;
 }
 
+.infrared-page-img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px rgb(8, 6, 19);
+    width: 40%;
+}
+
 .about-me-desc{
     font-family: var(--sans-serif-2);
     font-size: 1.1rem;
-    margin: 5%;
+    width: 100%;
+}
+
+.infrared-heading-page{
+    font-size: 1.8rem;
+}
+
+.infrared-desc{
+    font-family: var(--sans-serif-2);
+    font-size: 1.1rem;
     width: 100%;
 }
 
@@ -321,23 +332,23 @@ margin-bottom: .5rem;
     margin-bottom: 15%;
 }
 
-.infrared-text{
+.infrared-text-main{
     text-align: center;
 }
 
-.infrared-sauna-heading{
+.infrared-heading-main{
     font-size: 2.5rem;
 }
 
-.infrared-sauna-subheading{
+.infrared-subheading-main{
     font-size: 1.25rem;
 }
 
-.infrared-sauna-benefits-desktop{
+.infrared-benefits-desktop-main{
     display: none;
 }
 
-.infrared-sauna-benefits-mobile{
+.infrared-benefits-mobile-main{
     display: block;
 }
 
@@ -373,7 +384,7 @@ margin-bottom: .5rem;
     padding: var(--section-padding);
 }
 
-.infrared-sauna-grid{
+.infrared-grid-main{
      margin: var(--section-margin);
      margin-bottom: 0;
     padding: var(--section-padding);
@@ -401,7 +412,7 @@ font-weight: 700;
 top: 20%;
 }
 
-.massage-therapy-heading, .infrared-sauna-heading{
+.massage-therapy-heading, .infrared-heading-main{
     font-size: 2.5rem;
     margin: 8% 0;
 }
@@ -432,6 +443,10 @@ top: 20%;
 .headshot{
     width: 40%;
 }
+
+.infrared-page-img{
+    width: 50%;
+}
   }
 
 @media (max-width:575px){
@@ -444,4 +459,14 @@ top: 20%;
 .about-box{
     padding: 10% 2%;
 }
+
+.infrared-img-box{
+    text-align: center;
+}
+
+.infrared-page-img{
+    width: 90%;
+}
+
+
 }
