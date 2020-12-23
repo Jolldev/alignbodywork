@@ -9,6 +9,12 @@
   --bg-glow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
 }
 
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
 body{
     margin: 0;
     padding: 0;
