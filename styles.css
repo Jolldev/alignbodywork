@@ -9,11 +9,12 @@
   --bg-glow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
 }
 
-input {
+/* Override Safari button styles */
+/* input {
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
-}
+} */
 
 body{
     margin: 0;
@@ -191,7 +192,7 @@ margin-bottom: .5rem;
 }
 
 .pricing-btn,.sauna-btn{
-    font-family: var(--sans-serif-1) !important;
+    font-family: var(--sans-serif-1);
     font-size: 1.3rem;
     margin: 3% auto 1%;
     transition: .3s;
