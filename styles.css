@@ -185,7 +185,7 @@ margin-bottom: .5rem;
 }
 
 .pricing-btn,.sauna-btn{
-    font-family: var(--sans-serif-1);
+    font-family: var(--sans-serif-1) !important;
     font-size: 1.3rem;
     margin: 3% auto 1%;
     transition: .3s;
