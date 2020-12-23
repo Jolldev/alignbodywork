@@ -185,9 +185,9 @@ margin-bottom: .5rem;
 }
 
 .pricing-btn,.sauna-btn{
-    font-family: var(--serif-font);
-    font-size: 1.5rem;
-    margin: 4% auto 1%;
+    font-family: var(--sans-serif-1);
+    font-size: 1.3rem;
+    margin: 3% auto 1%;
     transition: .3s;
 }
 
@@ -333,7 +333,7 @@ margin-bottom: .5rem;
 @media (max-width:991px){
 
 .massage-therapy-brief{
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .infrared-text-main{
