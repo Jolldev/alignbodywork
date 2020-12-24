@@ -196,6 +196,7 @@ margin-bottom: .5rem;
     font-size: 1.3rem;
     margin: 3% auto 1%;
     transition: .3s;
+    -webkit-appearance: none;
 }
 
 .btn-optional-mobile{
@@ -368,7 +369,12 @@ margin-bottom: .5rem;
 }
 
 .btn-optional-mobile{
-    display: block;
+     display: block;
+    font-family: var(--sans-serif-1);
+    font-size: 1.3rem;
+    margin: 3% auto 1%;
+    transition: .3s;
+    -webkit-appearance: none;
     padding: 2%;
 }
 }
