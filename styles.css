@@ -74,12 +74,12 @@ body{
 }
 
 /* hides next/prev carousel controls */
-.carousel-control-next-icon,.carousel-control-prev-icon{
+#carouselMain .carousel-control-next-icon,#carouselMain .carousel-control-prev-icon{
     display: none;
 }
 
 /* modifies carousel indicators */
-.carousel-indicators li{
+#carouselMain .indicator{
     border-radius: 50%;
     width:8px;
     height: 8px;
@@ -123,6 +123,8 @@ width: 100%;
 .custom-toggler.navbar-toggler { 
     border: 1px;
     border-color: rgba(0, 0, 0, 0.6); 
+    position: relative;
+    
   } 
 
 button.navbar-toggler{
@@ -138,7 +140,7 @@ button.navbar-toggler:hover{
 
 .custom-toggler .navbar-toggler-icon { 
             background-image: url( 
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .8)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
         } 
 
 #navbarNavDropdown{
@@ -214,6 +216,24 @@ margin-bottom: .5rem;
 
 .testimonial-box{
     padding: var(--section-margin)
+}
+
+#carouselTestimonials .indicator{
+    border-radius: 50%;
+    background-color: rgb(23, 26, 29);
+    width:8px;
+    height: 8px;
+    margin: 0 10px;
+}
+
+#carouselTestimonials .carousel-indicators{
+/* position: absolute;
+bottom: 0; */
+}
+
+#carouselTestimonials .carousel-control-next-icon,#carouselTestimonials .carousel-control-prev-icon{
+   filter: brightness(0);
+   transform: scale(1.2);
 }
 
 /* .testimonial-content{
@@ -353,6 +373,7 @@ margin-bottom: .5rem;
 }
 
 .infrared-subheading-main{
+    color: rgb(253, 227, 192);
     font-size: 1.25rem;
 }
 
@@ -395,6 +416,11 @@ margin-bottom: .5rem;
     padding: var(--section-padding);
 }
 
+.infrared-heading-main{
+    font-size: 11vw;
+    margin-bottom: 12%;
+}
+
 .infrared-grid-main{
      margin: var(--section-margin);
      margin-bottom: 0;
@@ -418,12 +444,13 @@ margin-bottom: .5rem;
 }
 
 .caption-text{
-font-size: 3.4vw;
-font-weight: 700;
+font-size: 3.6vw;
+font-weight: 600;
 top: 20%;
+white-space: nowrap;
 }
 
-.massage-therapy-heading, .infrared-heading-main{
+.massage-therapy-heading{
     font-size: 2.5rem;
     margin: 8% 0;
 }
@@ -481,5 +508,15 @@ top: 20%;
 
 .about-me-bottom{
     width: 100%;
+}
+
+.carousel-control-prev-icon{
+    left: 0;
+    position: absolute;
+}
+
+.carousel-control-next-icon{
+    right: 0;
+    position: absolute;
 }
 }

@@ -62,14 +62,14 @@
     </header>
 
 
-    <main id="carouselMain" class="carousel slide" data-ride="carousel">
+    <main id="carouselMain" class="carousel slide" data-ride="carousel" data-pause="false">
         <ol class="carousel-indicators">
-            <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselMain" data-slide-to="1"></li>
-            <li data-target="#carouselMain" data-slide-to="2"></li>
+            <li data-target="#carouselMain" data-slide-to="0" class="active indicator"></li>
+            <li data-target="#carouselMain" data-slide-to="1" class="indicator"></li>
+            <li data-target="#carouselMain" data-slide-to="2" class="indicator"></li>
         </ol>
         <div class="carousel-inner text-center">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-interval="8000">
                 <div class="slide">
                     <img class="carousel-img" src="carousel-1.jpg" class="d-block w-100" alt="...">
                 </div>
@@ -79,7 +79,7 @@
             <!-- <div class="carousel-item">
                 <img class="carousel-img" src="carousel-2.jpg" class="d-block w-100" alt="...">
             </div> -->
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="8000">
                 <img class="carousel-img" src="therapy-carousel.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
@@ -206,7 +206,7 @@
         <div class="container-fluid">
             <div class="row infrared-grid-main dark-bg">
                 <div class="infrared-left-main col-lg-6 order-sm-1 my-auto">
-                    <div class="infrared-text-main">
+                    <div class="infrared-text-main text-center">
                         <h2 class="infrared-heading-main">Infrared Sauna & Chromotherapy</h2>
                         <h3 class="infrared-subheading-main"><em>Revitalize Your Health and Recovery</em></h3>
                         <p class="infrared-benefits-desktop-main mb-3">Infrared saunas produce the same infrared heat
@@ -222,7 +222,7 @@
 
                 </div>
                 <div class="col order-3 btn-optional-mobile col-12 my-auto text-center">
-                    <a type="button" class=" btn btn-light sauna-btn" href="infrared-sauna.html">Learn more</a>
+                    <a type="button" class=" btn btn-light sauna-btn mb-4" href="infrared-sauna.html">Learn more</a>
 
                 </div>
                 <div class="infrared-right-main col-lg-6 col-md-10 col-12 order-sm-2 my-auto mx-auto">
@@ -241,14 +241,22 @@
     </section>
 
     <section class="testimonials">
-        <main id="carouselTestimonials" class="carousel slide tester" data-ride="carousel" data-pause="false">
-
+        <main id="carouselTestimonials" class="carousel slide" data-ride="carousel" data-pause="false">
+            
             <div class="carousel-inner">
                 <div class="testimonial-box container-fluid mx-auto">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselMain" data-slide-to="0" class="active indicator"></li>
+                        <li data-target="#carouselMain" data-slide-to="1" class="indicator"></li>
+                        <li data-target="#carouselMain" data-slide-to="2" class="indicator"></li>
+                    </ol>
                     <div class="row testimonial-text">
+                        
                         <div class="carousel-item active" data-interval="12000">
-                            <div class="col-lg-5 col-md-8 col-10 mx-auto my-auto testimonial-cell quote-1 gold-bg">
+                            <div class="col-lg-5 col-md-8 col-9 mx-auto my-auto testimonial-cell quote-1 gold-bg">
+                                
                                 <div class="testimonial-content">
+                                
                                     <p class="testimonial-header">"</p>
                                     <p class="testimonial-quote text-center">As a person who has utilized the benefits
                                         of massage
@@ -261,11 +269,12 @@
                                         knowledge of muscles, techniques and how to
                                         manage tension, is wonderful, Great Job Sara!! I can’t wait for my next
                                         appointment. </p>
+                                        
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item" data-interval="12000">
-                            <div class="col-lg-5 col-md-8 col-10 mx-auto my-auto testimonial-cell quote-2 gold-bg">
+                            <div class="col-lg-5 col-md-8 col-9 mx-auto my-auto testimonial-cell quote-2 gold-bg">
                                 <div class="testimonial-content">
                                     <p class="testimonial-header">"</p>
                                     <p class="testimonial-quote text-center">I recently have had extreme muscle
@@ -282,7 +291,7 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-interval="12000">
-                            <div class="col-lg-5 col-md-8 col-10 mx-auto my-auto testimonial-cell quote-3 gold-bg">
+                            <div class="col-lg-5 col-md-8 col-9 mx-auto my-auto testimonial-cell quote-3 gold-bg">
                                 <div class="testimonial-content">
                                     <p class="testimonial-header">"</p>
                                     <p class="testimonial-quote text-center">Thanks again, that was a great way to start
