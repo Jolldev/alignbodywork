@@ -399,7 +399,7 @@ bottom: 0; */
  
 :root {
   --section-padding: 4% 3%;
-  --section-margin: 5% 0;
+  --section-margin: 15% 0;
 }
 
 .gold-bg{
@@ -476,6 +476,7 @@ white-space: nowrap;
 .about-box,.infrared-box{
     margin: var(--section-margin);
     padding: var(--section-padding);
+    margin-top: 5%;
 }
 
 .headshot{
