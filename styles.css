@@ -9,17 +9,15 @@
   --bg-glow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
 }
 
-/* Override Safari button styles */
-/* input {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-} */
+/* Makes position: absolute bottom:(footer height) keep footer at bottom of all pages */
+html{
+    position: relative;
+    min-height: 100%;
+}
 
 body{
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
 }
 
 .gold-bg{
@@ -124,8 +122,7 @@ width: 100%;
     border: 1px;
     border-color: rgba(0, 0, 0, 0.6); 
     position: relative;
-    
-  } 
+} 
 
 button.navbar-toggler{
     opacity: .7;
@@ -226,19 +223,10 @@ margin-bottom: .5rem;
     margin: 0 10px;
 }
 
-#carouselTestimonials .carousel-indicators{
-/* position: absolute;
-bottom: 0; */
-}
-
 #carouselTestimonials .carousel-control-next-icon,#carouselTestimonials .carousel-control-prev-icon{
    filter: brightness(0);
    transform: scale(1.2);
 }
-
-/* .testimonial-content{
-    display: inline-block;
-} */
 
 .testimonial-header{
     font-size: 5rem;
@@ -351,10 +339,67 @@ bottom: 0; */
     width: 100%;
 }
 
-.about-footer{
+
+/* Pricing page */
+.pricing-grid{
+    font-family: var(--sans-serif-1);
+    /* margin-bottom: 20%; */
+    padding: 2%;
+    width: 100%;
+}
+
+.pricing-heading{
+     font-size: 3rem;
+    margin: 2% auto 5%;
+    padding: 0;
+}
+
+.pricing-cell{
+    padding: 10px;
+}
+
+.pricing-box{
+    background-color: #fff;
+    border-radius: 5px;
+    color: black;
+    font-size: 1rem;
+    height: 100%;
+   width: auto;
+}
+
+.price{
+    font-size: 1.6rem;
+}
+
+.box-header{
+background-color: rgb(52, 58, 64);
+color: white;
+border-radius: 5px 5px 0 0;
+}
+
+.infrared-box-header{
+background-color: rgb(175, 156, 70);
+color: black;
+border-radius: 5px 5px 0 0;
+}
+
+.massage-length{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.save{
+    color: rgb(2, 36, 2);
+}
+
+
+/* footer for all pages besides the landing page */
+.pages-footer{
      background-color: rgb(18, 20, 22);
+     bottom: -80px;
     height: 80px;
     padding-top: 20px;
+    position: absolute;
     width: 100%;
 }
 
@@ -504,7 +549,7 @@ white-space: nowrap;
 }
 
 .infrared-page-img{
-    width: 90%;
+    width: 100%;
 }
 
 .about-me-bottom{
