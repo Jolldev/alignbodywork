@@ -360,7 +360,7 @@ margin-bottom: .5rem;
 
 .pricing-box{
     background-color: #fff;
-    box-shadow: 0 0 15px 1px rgb(39, 29, 9);
+    /* box-shadow: 0 0 15px 1px rgba(87, 59, 8, 0.774); */
     border-radius: 5px;
     color: black;
     font-size: 1rem;
