@@ -389,7 +389,7 @@ border-radius: 5px 5px 0 0;
 }
 
 .save{
-    color: rgb(3, 63, 3);
+    color: rgb(3, 53, 3);
 }
 
 
@@ -564,5 +564,9 @@ white-space: nowrap;
 .carousel-control-next-icon{
     right: 0;
     position: absolute;
+}
+
+.save{
+    color: rgb(9, 90, 9);
 }
 }
