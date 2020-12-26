@@ -342,19 +342,21 @@ margin-bottom: .5rem;
 
 /* Pricing page */
 .pricing-grid{
-    font-family: var(--sans-serif-1);
+    
     /* margin-bottom: 20%; */
     padding: 2%;
     width: 100%;
 }
 
 .pricing-heading{
-     font-size: 3rem;
+    font-family: var(--serif-font);
+     font-size: 4rem;
     margin: 2% auto 5%;
     padding: 0;
 }
 
 .pricing-cell{
+    font-family: var(--sans-serif-1);
     padding: 10px;
 }
 
@@ -363,13 +365,14 @@ margin-bottom: .5rem;
     /* box-shadow: 0 0 15px 1px rgba(87, 59, 8, 0.774); */
     border-radius: 5px;
     color: black;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     height: 100%;
    width: auto;
 }
 
-.price{
-    font-size: 1.6rem;
+.header-text{
+   font-family: var(--sans-serif-1);
+   font-size: 1.6rem;
 }
 
 .box-header{
