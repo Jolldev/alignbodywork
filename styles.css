@@ -71,7 +71,7 @@ body{
     width: 100%;
 }
 
-/* .infrared-slide{
+.infrared-slide{
     background-color: rgb(15, 14, 11);
 }
 
@@ -98,7 +98,7 @@ body{
 
 .infrared-carousel{
     width: 55%;
-} */
+}
 
 /* hides next/prev carousel controls */
 #carouselMain .carousel-control-next-icon,#carouselMain .carousel-control-prev-icon{
