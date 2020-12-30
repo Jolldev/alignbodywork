@@ -461,7 +461,7 @@ border-radius: 5px 5px 0 0;
     object-fit: cover; 
     /* width: 100%; */
 }
-
+}
 
 @media (max-width:991px){
 
@@ -638,7 +638,17 @@ white-space: nowrap;
     position: absolute;
 }
 
+.infrared-carousel-heading{
+    font-size: 4.5vw;
+}
+
+.slide-left-list{
+    font-size: 3.5vw;
+    text-align: left;
+}
+
 .save{
     color: rgb(9, 90, 9);
 }
+
 }
