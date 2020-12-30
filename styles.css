@@ -21,7 +21,7 @@ body{
 }
 
 .gold-bg{
-    background-color: rgb(199, 185, 103);
+    background-color: rgb(175, 156, 70);
     border-radius: 10px;
     box-shadow: 0 0 30px 2px rgb(29, 26, 15);
     color: var(--dark-font);
@@ -66,9 +66,15 @@ body{
 }
 
 /* carousel */
-.carousel-img{
+.large-screen{
     object-fit: cover;
-    width: 100%;
+    min-height: 100%;
+    /* max-width: 100%; */
+    min-width: 100%;
+}
+
+.small-screen{
+    display: none;
 }
 
 .infrared-slide{
@@ -78,8 +84,6 @@ body{
 .infrared-slide-left{
     color:#fff;
     font-family: var(--serif-font);
-    height:auto;
-    width: 45%;
 }
 
 .slide-left-container{
@@ -88,11 +92,11 @@ body{
 }
 
 .infrared-carousel-heading{
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 
 .slide-left-list{
-    font-size: 1.3rem;
+    font-size: 1.7vw;
     text-align: left;
 }
 
@@ -443,6 +447,22 @@ border-radius: 5px 5px 0 0;
     width: 100%;
 }
 
+@media (max-width:1024px){
+
+.large-screen{
+    display: none;
+}
+
+.small-screen{
+    display: block;
+    /* height: 100%; */
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover; 
+    /* width: 100%; */
+}
+
+
 @media (max-width:991px){
 
 .massage-therapy-brief{
@@ -498,7 +518,6 @@ border-radius: 5px 5px 0 0;
 .dark-bg{
     box-shadow: 0 0 10px 1px rgb(31, 30, 30);
 }
-
 
 .services-grid{
     margin: var(--section-margin);

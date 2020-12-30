@@ -1,26 +1,24 @@
-
-
-const carouselInner = document.querySelector('.carousel-inner');
-const carouselImg = document.querySelectorAll('.carousel-img');
-const topSection = document.querySelector('.top-section');
+const carouselImg = document.querySelectorAll(".carousel-img");
+const carouselArray= Array.from(carouselImg);
+// const slide = document.querySelectorAll('.slide');
 const logo = document.querySelector('.logo-nav');
 const logoHeight = logo.offsetHeight;
 
-const carouselArray = Array.from(carouselImg);
+// const slideArray = Array.from(slide);
 // console.log(carouselArray);
 
 function setHeight() {
 carouselArray.forEach(element => {
-    
-element.style.height= window.innerHeight-logoHeight +"px";
-   
+    element.style.height= window.innerHeight-logoHeight +"px";
+
     });
+    
 }
 
 function setHeightHalf() {
     carouselArray.forEach(element => {
 
-        element.style.height = (window.innerHeight - logoHeight + "px")/2;
+        element.style.height = (window.innerHeight - logoHeight)/2 + "px";
 
     });
 }
