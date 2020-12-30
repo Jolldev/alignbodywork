@@ -24,7 +24,7 @@ function setHeightHalf() {
 }
 
 function windowSize(){
- if (window.innerWidth > 1024) { 
+ if (window.innerWidth > window.innerHeight) { 
     setHeight();
 } else {
     setHeightHalf();

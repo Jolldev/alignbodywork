@@ -197,7 +197,7 @@ button.navbar-toggler:hover{
 
 .infrared-subheading-main{
     font-size: 1.5rem;
-    margin-bottom: 5%;
+    margin: 8% 0;
 }
 
 .infrared-benefits-mobile-main{
@@ -447,7 +447,7 @@ border-radius: 5px 5px 0 0;
     width: 100%;
 }
 
-@media (max-width:1024px){
+@media (orientation:portrait){
 
 .large-screen{
     display: none;
@@ -528,11 +528,6 @@ border-radius: 5px 5px 0 0;
     padding: var(--section-padding);
 }
 
-.infrared-heading-main{
-    font-size: 11vw;
-    margin-bottom: 12%;
-}
-
 .infrared-grid-main{
      margin: var(--section-margin);
      margin-bottom: 0;
@@ -562,9 +557,9 @@ top: 20%;
 white-space: nowrap;
 }
 
-.massage-therapy-heading{
-    font-size: 2.5rem;
-    margin: 8% 0;
+.massage-therapy-heading,.infrared-heading-main{
+    font-size: 2.25rem;
+    margin: 4% 0;
 }
 
 .cta-text h2{
