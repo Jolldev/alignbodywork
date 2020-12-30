@@ -18,7 +18,7 @@ carouselArray.forEach(element => {
 function setHeightHalf() {
     carouselArray.forEach(element => {
 
-        element.style.height = (window.innerHeight - logoHeight)/2 + "px";
+        element.style.height = (window.innerHeight - logoHeight)/1.9 + "px";
 
     });
 }
