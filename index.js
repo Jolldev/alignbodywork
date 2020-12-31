@@ -7,6 +7,14 @@ const logoHeight = logo.offsetHeight;
 // const slideArray = Array.from(slide);
 // console.log(carouselArray);
 
+var maxHeightSlide = 0;
+$('.portrait-slide-img').each(function () {
+    maxHeightSlide = Math.max(maxHeightSlide, $(this).outerHeight());
+    return maxHeightSlide;
+});
+$('.slide-1, .slide-2, .slide-3, .slide-4').css({ height: maxHeightSlide + 'px' });
+$('.slide-1, .slide-2, .slide-3, .slide-4').css({maxHeight: "100%"});
+
 function setHeight() {
 carouselArray.forEach(element => {
     element.style.height= window.innerHeight-logoHeight +"px";
@@ -15,19 +23,20 @@ carouselArray.forEach(element => {
     
 }
 
-function setHeightHalf() {
-    carouselArray.forEach(element => {
+// function setHeightHalf() {
+//     carouselArray.forEach(element => {
 
-        element.style.height = (window.innerHeight - logoHeight)/1.9 + "px";
+//         element.style.height = (window.innerHeight - logoHeight)/2 + "px";
 
-    });
-}
+//     });
+// }
 
 function windowSize(){
  if (window.innerWidth > window.innerHeight) { 
     setHeight();
 } else {
-    setHeightHalf();
+    // setHeightHalf();
+    return;
 }
 }
 

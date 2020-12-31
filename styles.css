@@ -1,5 +1,5 @@
 :root {
-  --section-padding: 4% ;
+  --section-padding: 4%;
   --section-margin: 5%;
   --serif-font: 'EB Garamond', serif;
   --sans-serif-1: 'Roboto', sans-serif;
@@ -20,14 +20,14 @@ body{
     padding: 0;
 }
 
-.gold-bg{
-    background-color: rgb(175, 156, 70);
+.gold-box{
+    background-color: rgb(194, 172, 74);
     border-radius: 10px;
     box-shadow: 0 0 30px 2px rgb(29, 26, 15);
     color: var(--dark-font);
 }
 
-.dark-bg{
+.dark-box{
     background-color: rgb(52, 58, 64);
     border-radius: 10px;
     box-shadow: 0 0 30px 2px rgb(31, 30, 30);
@@ -39,7 +39,6 @@ body{
     text-shadow: var(--bg-glow);
     transform: scale(1.1);
     transition: .5s;
-
 }
 
 /* Full site marble background image */
@@ -65,71 +64,7 @@ body{
     box-shadow: var(--bg-glow);
 }
 
-/* carousel */
-.large-screen{
-    object-fit: cover;
-    min-height: 100%;
-    /* max-width: 100%; */
-    min-width: 100%;
-}
-
-.small-screen{
-    display: none;
-}
-
-.infrared-slide{
-    background-color: rgb(15, 14, 11);
-}
-
-.infrared-slide-left{
-    color:#fff;
-    font-family: var(--serif-font);
-}
-
-.slide-left-container{
-    text-align: center;
-    width: 80%;
-}
-
-.infrared-carousel-heading{
-    font-size: 3vw;
-}
-
-.slide-left-list{
-    font-size: 1.7vw;
-    text-align: left;
-}
-
-.infrared-carousel{
-    width: 55%;
-}
-
-/* hides next/prev carousel controls */
-#carouselMain .carousel-control-next-icon,#carouselMain .carousel-control-prev-icon{
-    display: none;
-}
-
-/* modifies carousel indicators */
-#carouselMain .indicator{
-    border-radius: 50%;
-    width:8px;
-    height: 8px;
-    margin: 0 15px;
-}
-
-.caption-text{
-font-size: 3.5vw;
-font-weight: 400;
-font-family: 'Barlow Condensed', sans-serif;
- letter-spacing: 1px;
-position: absolute;
-text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
-top: 10%;
-width: 100%;
-}
-
-
-/* navbar on main page */
+/* Navbar on main page */
 .navbar{
     background-color: rgba(0, 0, 0, 0.705);
 }
@@ -175,6 +110,81 @@ button.navbar-toggler:hover{
 
 #navbarNavDropdown{
     transition: .8s;
+}
+
+/* Carousel */
+
+/* hides next/prev carousel controls */
+#carouselMain .carousel-control-next-icon,#carouselMain .carousel-control-prev-icon{
+    display: none;
+}
+
+/* modifies carousel indicators */
+#carouselMain .indicator{
+    border-radius: 50%;
+    width:8px;
+    height: 8px;
+    margin: 0 15px;
+}
+
+
+/* Image options dependent on screen size */
+.landscape-slide-img{
+   object-fit: cover;
+    width: 100%;
+}
+
+.portrait-slide-img{
+    display: none;
+}
+
+
+/* Carousel slide #1 */
+.carousel-1-text{
+font-size: 3.5vw;
+font-weight: 400;
+font-family: 'Barlow Condensed', sans-serif;
+letter-spacing: 1px;
+position: absolute;
+text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
+top: 10%;
+width: 100%;
+}
+
+.carousel-img-landscape{
+    font-size: 2rem;
+}
+
+.carousel-img-portrait{
+    display: none;
+}
+
+.fancy-align{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow: 0 0 20px #996f35;
+}
+
+.slide-2{
+    object-fit: cover;
+    width:100%;
+}
+
+/* Infrared slide (carousel slide #4) */
+.infrared-slide{
+    background-color: rgb(15, 14, 11);
+    color: white;
+    font-family: var(--serif-font);
+}
+
+.infrared-slide-heading{
+    font-size: 3vw;
+}
+
+.slide-body{
+    font-size: 1.7vw;
+    text-align: left;
 }
 
 /* Treatment options & Infrared Sauna sections*/
@@ -449,25 +459,66 @@ border-radius: 5px 5px 0 0;
 
 @media (orientation:portrait){
 
-.large-screen{
+.landscape-slide-img{
     display: none;
 }
 
-.small-screen{
+.portrait-slide-img{
     display: block;
-    /* height: 100%; */
-    min-height: 100%;
-    width: 100%;
-    object-fit: cover; 
-    /* width: 100%; */
+    object-fit: cover;
+    position: relative;
+    width: 100%; 
+}
+
+.carousel-1-text{
+font-size: 3.6vw;
+font-weight: 600;
+top: 15%;
+white-space: nowrap;
+}
+
+
+.carousel-img-landscape{
+    display: none;
+}
+
+.landscape-caption-stones{
+    display: none;
+}
+
+.portrait-caption-stones{
+    color: black;
+font-size: 3.5vw;
+font-weight: 600;
+font-family: 'Barlow Condensed', sans-serif;
+left: 3%;
+letter-spacing: 1px;
+position: absolute;
+text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
+top: 3%;
+width: 60%;
+}
+
+.fancy-align{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5vw;
+    font-weight: 700;
+    position: relative;
+    
+}
+
+.carousel-img-portrait{
+    display: block;
+    position: relative;
+    object-fit: cover;
 }
 }
 
 @media (max-width:991px){
 
-    .infrared-carousel{
+    /* .infrared-slide{
     width: 45%;
-}
+} */
 
 .massage-therapy-brief{
     margin-bottom: 10%;
@@ -515,11 +566,11 @@ border-radius: 5px 5px 0 0;
   --section-margin: 15% 0;
 }
 
-.gold-bg{
+.gold-box{
     box-shadow: 0 0 10px 1px rgb(39, 35, 20);
 }
 
-.dark-bg{
+.dark-box{
     box-shadow: 0 0 10px 1px rgb(31, 30, 30);
 }
 
@@ -550,12 +601,6 @@ border-radius: 5px 5px 0 0;
     padding: 10px 0;
 }
 
-.caption-text{
-font-size: 3.6vw;
-font-weight: 600;
-top: 20%;
-white-space: nowrap;
-}
 
 .massage-therapy-heading,.infrared-heading-main{
     font-size: 2.25rem;
@@ -633,11 +678,11 @@ white-space: nowrap;
     position: absolute;
 }
 
-.infrared-carousel-heading{
+.infrared-slide-heading{
     font-size: 4.5vw;
 }
 
-.slide-left-list{
+.infrared-slide-li{
     font-size: 3.5vw;
     text-align: left;
 }
