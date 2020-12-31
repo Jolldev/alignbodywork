@@ -41,6 +41,10 @@ body{
     transition: .5s;
 }
 
+ul{
+    padding-inline-start: 20px;
+}
+
 /* Full site marble background image */
 .marble-bg {
   position: fixed; 
@@ -185,6 +189,7 @@ width: 100%;
 .slide-body{
     font-size: 1.7vw;
     text-align: left;
+    width: 75%;
 }
 
 /* Treatment options & Infrared Sauna sections*/
@@ -494,7 +499,7 @@ font-family: 'Barlow Condensed', sans-serif;
 left: 3%;
 letter-spacing: 1px;
 position: absolute;
-text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
+/* text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35; */
 top: 3%;
 width: 60%;
 }
@@ -504,6 +509,7 @@ width: 60%;
     font-size: 5vw;
     font-weight: 700;
     position: relative;
+    text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
     
 }
 
@@ -682,9 +688,10 @@ width: 60%;
     font-size: 4.5vw;
 }
 
-.infrared-slide-li{
-    font-size: 3.5vw;
+.slide-body{
+    font-size: 3.2vw;
     text-align: left;
+    width: 100%;
 }
 
 .save{
