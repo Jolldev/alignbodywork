@@ -143,6 +143,18 @@ button.navbar-toggler:hover{
 }
 
 
+.carousel-img-landscape{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    position: relative;
+}
+
+.carousel-img-portrait{
+    display: none;
+}
+
+
 /* Carousel slide #1 */
 .carousel-1-text{
 font-size: 3.5vw;
@@ -155,14 +167,7 @@ top: 10%;
 width: 100%;
 }
 
-.carousel-img-landscape{
-    font-size: 2rem;
-}
-
-.carousel-img-portrait{
-    display: none;
-}
-
+/* Stones slide (slide 2) */
 .fancy-align{
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
@@ -173,6 +178,24 @@ width: 100%;
 .slide-2{
     object-fit: cover;
     width:100%;
+}
+
+/* About slide (slide 3) */
+.slide-about-body-landscape{
+color: var(--dark-font);
+font-size: 2.5vw;
+font-weight: 400;
+font-family: var(--serif-font);
+left: 1%;
+letter-spacing: 1px;
+line-height: 1.3;
+position: absolute;
+top: 3%;
+}
+
+.about-btn{
+    font-size: 1.1rem;
+    margin-top: 20%;
 }
 
 /* Infrared slide (carousel slide #4) */
@@ -187,7 +210,7 @@ width: 100%;
 }
 
 .slide-body{
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     text-align: left;
     width: 75%;
 }
@@ -475,16 +498,22 @@ border-radius: 5px 5px 0 0;
     width: 100%; 
 }
 
+.carousel-img-landscape{
+    display: none;
+}
+
+.carousel-img-portrait{
+    display: flex;
+    direction: column;
+    position: relative;
+    object-fit: cover;
+}
+
 .carousel-1-text{
 font-size: 3.6vw;
 font-weight: 600;
 top: 15%;
 white-space: nowrap;
-}
-
-
-.carousel-img-landscape{
-    display: none;
 }
 
 .landscape-caption-stones{
@@ -513,18 +542,34 @@ width: 60%;
     
 }
 
-.carousel-img-portrait{
-    display: block;
-    position: relative;
-    object-fit: cover;
+.slide-about-body-portrait{
+color: var(--dark-font);
+font-size: 3.5vw;
+font-weight: 600;
+font-family: var(--serif-font);
+left: 2%;
+letter-spacing: 1px;
+line-height: 1.3;
+position: absolute;
+text-shadow: 0 0 15px rgba(252, 252, 252, 0.466);
+top: 7%;
 }
+
+.about-btn{
+    font-size: 2vw;
+    margin-top: 30%;
+}
+
+
+/* .holistic-portrait{
+    font-weight: 600;
+    text-shadow: 0 0 15px rgb(53, 120, 11);
+} */
+
 }
 
 @media (max-width:991px){
 
-    /* .infrared-slide{
-    width: 45%;
-} */
 
 .massage-therapy-brief{
     margin-bottom: 10%;
