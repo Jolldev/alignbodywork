@@ -196,6 +196,7 @@ top: 3%;
 .about-btn{
     font-size: 1.1rem;
     margin-top: 20%;
+    -webkit-appearance: none;
 }
 
 /* Infrared slide (carousel slide #4) */
@@ -552,12 +553,12 @@ letter-spacing: 1px;
 line-height: 1.3;
 position: absolute;
 text-shadow: 0 0 15px rgba(252, 252, 252, 0.466);
-top: 7%;
+top: 15%;
 }
 
 .about-btn{
     font-size: 2vw;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 
