@@ -21,7 +21,7 @@ body{
 }
 
 .gold-box{
-    background-color: rgb(194, 172, 74);
+    background-color: rgb(160, 142, 63);
     border-radius: 10px;
     box-shadow: 0 0 30px 2px rgb(29, 26, 15);
     color: var(--dark-font);
@@ -250,7 +250,8 @@ top: 5%;
 }
 
 .massage-therapy-heading,.infrared-heading-main{
-     font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+     font-size: 5rem;
     margin: 2% auto 5%;
     padding: 0;
 }
@@ -262,7 +263,7 @@ top: 5%;
 }
 
 .treatment-label{
-font-size: 1.1rem;   
+font-size: 1.25rem;   
 font-weight: 600;
 letter-spacing: .8px;
 margin-bottom: .5rem;
@@ -434,7 +435,7 @@ margin-bottom: .5rem;
 
 .pricing-heading{
     font-family: var(--serif-font);
-     font-size: 4rem;
+     font-size: 5rem;
     margin: 2% auto 5%;
     padding: 0;
 }
