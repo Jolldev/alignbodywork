@@ -251,8 +251,8 @@ top: 5%;
 
 .massage-therapy-heading,.infrared-heading-main{
     font-family: 'Dancing Script', cursive;
-     font-size: 5rem;
-    margin: 2% auto 5%;
+     font-size: 4rem;
+    margin: 1% auto 3%;
     padding: 0;
 }
 
@@ -662,7 +662,7 @@ top: 15%;
 
 
 .massage-therapy-heading,.infrared-heading-main{
-    font-size: 2.25rem;
+    font-size: 3rem;
     margin: 4% 0;
 }
 
@@ -717,6 +717,11 @@ top: 15%;
 
 .infrared-img-box{
     text-align: center;
+}
+
+.massage-therapy-heading,.infrared-heading-main{
+    font-size: 2.7rem;
+    margin: 4% 0;
 }
 
 .infrared-page-img-top,.infrared-page-img-bot{
