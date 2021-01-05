@@ -145,7 +145,7 @@ button.navbar-toggler:hover{
 
 .carousel-img-landscape{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 2rem;
     position: relative;
 }
@@ -180,19 +180,11 @@ width: 100%;
     width:100%;
 }
 
-/* About slide (slide 3) */
-.slide-about-body-landscape{
-color: var(--dark-font);
-font-size: 2.5vw;
-font-weight: 500;
-font-family: var(--serif-font);
-left: 1%;
-letter-spacing: 1px;
-line-height: 1.3;
-position: absolute;
-top: 5%;
+.about-collage{
+    object-fit: contain;
+    height: 100%;
+    width: auto;
 }
-
 
 .holistic-landscape{
     /* font-weight: 600; */
@@ -493,6 +485,7 @@ border-radius: 5px 5px 0 0;
     width: 100%;
 }
 
+
 @media (orientation:portrait){
 
 .landscape-slide-img{
@@ -548,30 +541,6 @@ width: 60%;
     position: relative;
     text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
     
-}
-
-.slide-about-body-portrait{
-color: var(--dark-font);
-font-size: 3.5vw;
-font-weight: 600;
-font-family: var(--serif-font);
-left: 2%;
-letter-spacing: 1px;
-line-height: 1.3;
-position: absolute;
-text-shadow: 0 0 15px rgba(252, 252, 252, 0.466);
-top: 15%;
-}
-
-.about-btn{
-    font-size: 2vw;
-    margin-top: 20%;
-}
-
-
-.holistic-portrait{
-    /* font-weight: 700; */
-    /* text-shadow: 0 0 15px rgb(190, 162, 33); */
 }
 
 }
