@@ -1,4 +1,3 @@
-alert("The about me slide isn't 100% done, I just wanted to see it on my phone. How you do you feel about it as is?")
 
 const carouselImg = document.querySelectorAll(".carousel-img");
 const carouselArray= Array.from(carouselImg);
