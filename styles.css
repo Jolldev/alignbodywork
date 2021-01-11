@@ -219,6 +219,13 @@ width: 100%;
     text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
 }
 
+.slide-caption-align{
+    font-family: var(--serif-font);
+    font-size: 1.8vw;
+    text-align: left;
+    width: 75%;
+}
+
 .portrait-caption-stones{
    color: var(--dark-font);
    font-size: 3.5vw;
@@ -238,9 +245,9 @@ width: 100%;
     font-size: 4.5vw;
 }
 
-.slide-caption{
+.slide-caption-infrared{
     font-family: var(--serif-font);
-    font-size: 1.8vw;
+    font-size: 3vw;
     text-align: left;
     width: 75%;
 }
@@ -267,7 +274,7 @@ width: 100%;
 
 .massage-therapy-heading{
     font-family: var(--cursive-font);
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .treatment-label{
@@ -323,7 +330,7 @@ width: 100%;
 /* Testimonial section on main page */
 .testimonial-cell{
     font-family: 'Sorts Mill Goudy', serif;
-    padding: 3%;
+    /* padding: 3%; */
 }
 
 #carouselTestimonials .indicator{
