@@ -242,12 +242,13 @@ width: 100%;
 /* Infrared slide (slide 4) */
 .infrared-slide-heading{
     font-family: var(--serif-font);
-    font-size: 4.5vw;
+    font-size: .9rem;
 }
 
 .slide-caption-infrared{
     font-family: var(--serif-font);
-    font-size: 3vw;
+    font-size: .8rem;
+    line-height: 1.2;
     text-align: left;
     width: 75%;
 }
