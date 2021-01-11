@@ -53,13 +53,13 @@ function carouselNormalization() {
         };
         normalizeHeights();
 
-        $(window).on('resize orientationchange', function () {
-            tallest = 0, heights.length = 0; //reset vars
-            items.each(function () {
-                $(this).css('min-height', '0'); //reset min-height
-            });
-            normalizeHeights(); //run it again 
-        });
+        // $(window).on('resize orientationchange', function () {
+        //     tallest = 0, heights.length = 0; //reset vars
+        //     items.each(function () {
+        //         $(this).css('min-height', '0'); //reset min-height
+        //     });
+        //     normalizeHeights(); //run it again 
+        // });
     }
 }
 
