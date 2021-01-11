@@ -1,73 +1,73 @@
-
-const carouselImg = document.querySelectorAll(".carousel-img");
-const carouselArray= Array.from(carouselImg);
-// const slide = document.querySelectorAll('.slide');
+// Sets height of main page landscape oriented carousel images to equal the space between
+// the bottom of navbar and bottom of window
+const landscapeImg = document.querySelectorAll(".landscape-slide-img");
+const landscapeImgArray = Array.from(landscapeImg);
 const logo = document.querySelector('.logo-nav');
 const logoHeight = logo.offsetHeight;
 
-// const slideArray = Array.from(slide);
-// console.log(carouselArray);
+function setHeight() {
+    landscapeImgArray.forEach(element => {
+        element.style.height = window.innerHeight - logoHeight + "px";
+    });
+}
 
+var aspectRatio = window.innerWidth/window.innerHeight
+
+function windowSize() {
+    if (aspectRatio > 4/3) {
+        setHeight();
+    } else {
+        // setHeightHalf();
+        return;
+    }
+}
+
+
+window.addEventListener('resize', windowSize);
+
+
+// Sets all main page carousel images (screen in portrait orientation) to the same height
 var maxHeightSlide = 0;
 $('.portrait-slide-img').each(function () {
     maxHeightSlide = Math.max(maxHeightSlide, $(this).outerHeight());
     return maxHeightSlide;
 });
 $('.slide-1, .slide-2, .slide-3, .slide-4').css({ height: maxHeightSlide + 'px' });
-$('.slide-1, .slide-2, .slide-3, .slide-4').css({maxHeight: "100%"});
+$('.slide-1, .slide-2, .slide-3, .slide-4').css({ maxHeight: "100%" });
 
-function setHeight() {
-carouselArray.forEach(element => {
-    element.style.height= window.innerHeight-logoHeight +"px";
+// Makes all testimonial text boxes on main page same height by matching heighest
+function carouselNormalization() {
+    var items = $('#carouselTestimonials .carousel-item'), //grab all slides
+        heights = [], //create empty array to store height values
+        tallest; //create variable to make note of the tallest slide
 
-    });
-    
+    if (items.length) {
+        function normalizeHeights() {
+            items.each(function () { //add heights to array
+                heights.push($(this).height());
+            });
+            tallest = Math.max.apply(null, heights); //cache largest value
+            items.each(function () {
+                $('.testimonial-cell').css('min-height', tallest + 'px');
+            });
+        };
+        normalizeHeights();
+
+        $(window).on('resize orientationchange', function () {
+            tallest = 0, heights.length = 0; //reset vars
+            items.each(function () {
+                $(this).css('min-height', '0'); //reset min-height
+            });
+            normalizeHeights(); //run it again 
+        });
+    }
 }
 
-// function setHeightHalf() {
-//     carouselArray.forEach(element => {
-
-//         element.style.height = (window.innerHeight - logoHeight)/2 + "px";
-
-//     });
-// }
-
-function windowSize(){
- if (window.innerWidth > window.innerHeight) { 
-    setHeight();
-} else {
-    // setHeightHalf();
-    return;
+/**
+ * Wait until all the assets have been loaded so a maximum height 
+ * can be calculated correctly.
+ */
+window.onload = function () {
+    carouselNormalization();
+    windowSize();
 }
-}
-
-window.onload = windowSize();
-window.addEventListener('resize', windowSize);
-
-
-var maxHeight = 0;
-$('.testimonial-cell').each(function () {
-    maxHeight = Math.max(maxHeight, $(this).outerHeight());
-    return maxHeight;
-});
-$('.quote-1, .quote-2, .quote-3').css({ height: maxHeight + 'px' });
-
-
-// var inner = document.querySelectorAll('.testimonial-content');
-// inner = Array.from(inner);
-
-
-// function center() {
-//     inner.forEach(element => {
-
-//        console.log(element.offsetHeight);
-       
-//     });
-// }
-
-// center();
-
-// $('#carouselTestimonials').on('slide.bs.carousel', function () {
-//     console.log(testimonialBox.offsetHeight);
-// })
-

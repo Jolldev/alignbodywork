@@ -10,15 +10,8 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Castoro&family=Dancing+Script:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Barlow+Condensed:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Sorts+Mill+Goudy&family=Open+Sans:wght@400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=EB+Garamond:wght@400;500&family=Barlow+Condensed:wght@400;600&family=Handlee&family=Sorts+Mill+Goudy&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@400;600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta name="description"
         content="Therapeutic Massage & Bodywork in Green Bay, WI. Infrared sauna, massage, Gua Sha, and more.">
     <title>Align Bodywork</title>
@@ -27,16 +20,16 @@
 
 <body>
 
-    <img class="marble-bg" src="marble2.jpg" alt="massage-room-wall">
-
-    <script>alert("There won't be anything new for a good couple days yet. Now that most things are at least in place, I've been working on refactoring my code to clean things up and to make design changes easier. I've probably got a thousand lines of code to go through so it'll be a bit yet.")
+    <script>alert("Well after about 12 hours, everything is refactored! I feel like the layout (besides some spacing details) is pretty good, the fonts and colors are not finalized yet. Feel free to share you opinion on what's on there now")
     </script>
+
+    <img class="marble-bg" src="marble2.jpg" alt="massage-room-wall">
 
     <header class="logo-nav text-center">
 
-        <a class="logo" href="index.html"><img class="brand-logo" src="logo.png" alt="align-bodywork-logo"></a>
+        <a href="index.html"><img class="brand-logo" src="logo.png" alt="align-bodywork-logo"></a>
 
-        <nav id="nav" class="navbar navbar-expand-md navbar-light nav-main">
+        <nav id="nav" class="navbar navbar-expand-md">
             <button class="navbar-toggler custom-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -72,122 +65,107 @@
             <li data-target="#carouselMain" data-slide-to="3" class="indicator"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active text-center" data-interval="80000">
-                <div class="slide">
-                    <img class="carousel-img landscape-slide-img slide-1" src="carousel-1-large.jpg"
-                        class="d-block w-100" alt="Align Bodywork massage table and room">
-                    <img class="carousel-img portrait-slide-img slide-1" src="carousel-1-small.jpg"
-                        class="d-block w-100" alt="Align Bodywork massage table and room">
-                </div>
+            <div class="carousel-item active text-center carousel-textbox-dark" data-interval="80000">
+
+                <img class="portrait-slide-img slide-1" src="carousel-1-portrait.jpg" class="d-block w-100"
+                    alt="Align Bodywork massage table and room">
+
                 <h2 class="carousel-1-text">Pain Relief • Injury Rehabilitation • Performance • Relaxation</h2>
+
+                <img class="landscape-slide-img" src="carousel-1-landscape.jpg" class="d-block w-100"
+                    alt="Align Bodywork massage table and room">
+
             </div>
 
             <div class="carousel-item" data-interval="80000">
-                <div class="slide infrared-slide d-flex align-items-center">
-                    <div class="slide-left-container text-center col p-0">
+                <div class="carousel-textbox-dark d-flex align-items-center">
 
-                        <div class="landscape-caption-stones col">
-                            <p class="slide-body text-center mx-auto"><span class="fancy-align">Align</span> - to bring
-                                components or parts into proper or desirable coordination and interaction
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col carousel-img carousel-img-landscape p-0">
-                        <img class="landscape-slide-img slide-2" src="carousel-2-large.jpg"
-                            alt="Neatly stacked pile of smooth stones">
-
-                    </div>
-                    <div class="col-12 carousel-img-portrait p-0">
-                        <img class="portrait-slide-img slide-2" src="carousel-2-large.jpg"
+                    <div class="col-12 portrait-slide-container p-0">
+                        <img class="portrait-slide-img slide-2" src="carousel-2.jpg"
                             alt="Neatly stacked pile of smooth stones">
                         <h2 class="portrait-caption-stones"><span class="fancy-align">Align</span> - to bring components
                             or parts into proper or desirable
                             coordination and interaction.
                         </h2>
                     </div>
-                </div>
-            </div>
 
+                    <div class="text-center col p-0">
 
-
-            <div class="carousel-item" data-interval="80000">
-                <div class="slide infrared-slide d-flex flex-row">
-
-
-                    <div class="col-12 carousel-img carousel-img-landscape p-0 align-items-center">
-
-                        <div class="col">
-                            <p class="slide-body text-center mx-auto">I'm Sara, a Licensed Massage Therapist and
-                                Physical
-                                Therapist Assistant. I believe in utilizing <span> a holistic approach to assist the
-                                    body to
-                                    function to it's full capabilities</span>
+                        <div class="landscape-caption-stones col">
+                            <p class="slide-caption text-center mx-auto"><span class="fancy-align">Align </span> - to
+                                bring
+                                components or parts into proper or desirable coordination and interaction
                             </p>
-
-                            <div class="col-12 mx-auto text-center">
-                                <a type="button" class="btn btn-light about-btn" href="about-me.html">More
-                                    about me</a>
-                            </div>
-
                         </div>
 
-                        <img class="col about-collage p-0" src="collage-landscape.jpg" alt="">
-
                     </div>
 
-                    <div class="col-12 carousel-img-portrait p-0">
-                        <a href="about-me.html"><img class="portrait-slide-img slide-2" src="collage-portrait.jpg" alt="About me images of Sara including her running, weightlifting, performing Gua Sha, 
-                                                    and cupping"></a>
-
-
-                        <!-- <div class="about-btn-container">
-                                <a type="button" class="about-btn-portrait" href="about-me.html">About me</a>
-                            </div> -->
+                    <div class="col landscape-slide-container p-0">
+                        <img class="landscape-slide-img" src="carousel-2.jpg"
+                            alt="Neatly stacked pile of smooth stones">
                     </div>
-
-
-
 
                 </div>
-
             </div>
 
+            <div class="carousel-item" data-interval="80000">
+                <div class="carousel-textbox-light d-flex flex-row">
+
+                    <div class="col-12 portrait-slide-container p-0">
+                        <a href="about-me.html"><img class="portrait-slide-img slide-3" src="collage-portrait.jpg" alt="About me images of Sara including her running, weightlifting, performing Gua Sha, 
+                                                    and cupping"></a>
+                    </div>
+
+                    <div class="col-12 landscape-slide-container p-0 align-items-center">
+                        <div class="col">
+                            <p class=" about-carousel-caption text-center mx-auto">I'm Sara, a Licensed Massage
+                                Therapist and
+                                Physical
+                                Therapist Assistant. I believe in utilizing a holistic approach to assist the
+                                body to
+                                function to it's full capabilities.
+                            </p>
+                            <div class="col-12 mx-auto text-center">
+                                <a type="button" class="btn about-btn" href="about-me.html">More
+                                    about me</a>
+                            </div>
+                        </div>
+                        <img class="col landscape-slide-img about-collage p-0" src="collage-landscape.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
 
             <div class="carousel-item" data-interval="80000">
-                <div class="slide infrared-slide d-flex align-items-center">
-                    <div class="slide-left-container text-center col p-1">
+                <div class="slide carousel-textbox-dark d-flex align-items-center">
+                    <div class="text-center col p-1">
                         <h4 class="mb-lg-5 mb-3 infrared-slide-heading">Experience the many benefits of the
                             Infrared Sauna </h4>
-                        <div class="slide-body mx-md-auto">
+                        <div class="slide-caption mx-md-auto">
                             <ul>
                                 <li>Faster muscle recovery</li>
                                 <li>Ease joint pain and stiffness</li>
                                 <li>Stress and fatigue reduction</li>
                                 <li>Healthier skin</li>
                                 <li>Increase metabolism</li>
-                                <li>and more!</li>
+                                <li><a class="infrared-carousel-and-more" href="infrared-sauna.html">and more!</a></li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col p-0">
 
-                    <div class="col carousel-img p-0">
-                        <img class="landscape-slide-img slide-4" src="carousel-4-large.jpg"
+                        <img class="portrait-slide-img slide-4" src="carousel-4-portrait.jpg"
                             alt="Infrared Sauna photo at Align Bodywork">
-                        <img class="portrait-slide-img slide-4" src="carousel-4-small.jpg"
+
+                        <img class="landscape-slide-img" src="carousel-4-landscape.jpg"
                             alt="Infrared Sauna photo at Align Bodywork">
+
                     </div>
                 </div>
             </div>
 
         </div>
 
-       
-
-
-        </div>
         <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -200,212 +178,208 @@
 
 
 
-    <section class="massage-therapy-options" id="services">
-        <div class="container-fluid">
-            <div class="row services-grid gold-box">
-                <h2 class="massage-therapy-heading text-center col-12">Treatment Options</h2>
-                <div class="img-cell col-sm-8 col-md-6 col-lg-5 mx-auto my-auto">
-                    <img class="massage-therapy-img mx-auto" src="precision-neuromuscular-therapy.jpg"
-                        alt="precision-neuromuscular-therapy-img">
-                </div>
-                <div class="brief-cell col-sm-12 col-md-6 col-lg-7 my-auto">
-                    <h3 class="treatment-label">Precision Neuromuscular Therapy</h3>
-                    <p class="massage-therapy-brief">Slow, sustained pressure or vibration techniques to release
-                        trigger
-                        points, also
-                        known as areas of tissue strain, in the body. It is used to locate & release spasms,
-                        decrease
-                        referred pain, improve
-                        circulation & help to restore proper postural alignment & connective tissue flexibility.</p>
-                </div>
-                <div class="img-cell col-sm-8 col-md-6 col-lg-5 mx-auto my-auto">
-                    <img class="massage-therapy-img mx-auto" src="Deep-tissue-massage.jpg"
-                        alt="deep-tissue-massage-img">
-                </div>
-                <div class="brief-cell col-sm-12 col-md-6 col-lg-7 my-auto">
-                    <h3 class="treatment-label">Deep Tissue</h3>
-                    <p class="massage-therapy-brief">Bodywork of the fascia and deeper layers of connective tissue
-                        in
-                        the body using slow, sustained & deep
-                        pressure at problem areas to relieve tension. Recommended for those with chronic stress,
-                        injuries and active
-                        individuals. Soreness can be common after this type of bodywork and drinking lots of water
-                        is
-                        essential to help with the
-                        removal of toxins released & recovery.</p>
-                </div>
-                <div class="img-cell col-sm-8 col-md-6 col-lg-5 mx-auto my-auto">
-                    <img class="massage-therapy-img mx-auto" src="gua-sha.jpg" alt="gua-sha-scraping-img">
-                </div>
-                <div class="brief-cell col-sm-12 col-md-6 col-lg-7 my-auto">
-                    <h3 class="treatment-label">Gua Sha/Scraping</h3>
-                    <p class="massage-therapy-brief">Ancient Chinese healing technique that involves scraping your
-                        skin
-                        with a massage tool to stimulate new
-                        oxygenated blood flow to the areas, break up connective tissue adhesion and relieve tension
-                        in
-                        the fascia and
-                        superficial muscles.</p>
-                </div>
-                <div class="img-cell col-sm-8 col-md-6 col-lg-5 mx-auto my-auto">
-                    <img class="massage-therapy-img mx-auto" src="sports-massage.jpg" alt="sports-massage-img">
-                </div>
-                <div class="brief-cell col-sm-12 col-md-6 col-lg-7 my-auto">
-                    <h3 class="treatment-label">Sports Massage</h3>
-                    <p class="massage-therapy-brief">Bodywork utilizing various techniques targeted toward athletic
-                        clients. It is used to speed up the healing of
-                        injuries, injury prevention, prepare the body for athletic activity and help muscles
-                        function
-                        properly to maximize
-                        performance.</p>
-                </div>
-                <div class="img-cell col-sm-8 col-md-6 col-lg-5 mx-auto my-auto">
-                    <img class="massage-therapy-img mx-auto" src="craniosacral-massage.jpg"
-                        alt="craniosacral-massage-img">
-                </div>
-                <div class="brief-cell col-sm-12 col-md-6 col-lg-7 my-auto">
-                    <h3 class="treatment-label">Craniosacral Massage</h3>
-                    <p class="massage-therapy-brief">A gentle, but powerful modality to aide in the treatment of
-                        headaches, chronic pain, IBS & anxiety. The
-                        practitioner uses light touch to assist the natural movement of cerebrospinal fluid within
-                        the
-                        craniosacral system.</p>
-                </div>
-                <div class="img-cell col-sm-8 col-md-6 col-lg-5 mx-auto my-auto">
-                    <img class="massage-therapy-img mx-auto" src="swedish-massage.jpg" alt="swedish-massage-img">
-                </div>
-                <div class="brief-cell col-sm-12 col-md-6 col-lg-7 my-auto">
-                    <h3 class="treatment-label">Swedish Massage</h3>
-                    <p class="massage-therapy-brief">Therapeutic relaxation techniques which include long,
-                        gliding strokes, rolling, kneading & percussive
-                        techniques to improve circulation and decrease pain, stress levels and muscle adhesion.</p>
-                </div>
-                <div class="col-12 col-lg-9 mx-auto text-center mt-lg-5 mt-1 treatment-label">
-                    <p><em>
-                            *Various techniques will likely be combined into your unique treatment. Together we will
-                            determine the best treatment plan to meet your life and needs.
-                        </em></p>
-                </div>
+    <section class="massage-therapy-options container-fluid w-100" id="services">
+        <div class="row services-grid light-box">
+            <h2 class="massage-therapy-heading text-center col-12 mt-md-2 mb-3 mb-md-4 p-0">Treatment Options</h2>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-5 mx-auto text-center">
+                <img class="massage-therapy-img mx-auto" src="precision-neuromuscular-therapy.jpg"
+                    alt="precision-neuromuscular-therapy-img">
+            </div>
+            <div class="massage-therapy-text-container col-12 col-md-6 col-lg-7 my-auto">
+                <h3 class="treatment-label">Precision Neuromuscular Therapy</h3>
+                <p class="massage-therapy-summary mb-5 my-md-auto">Slow, sustained pressure or vibration techniques to
+                    release
+                    trigger
+                    points, also
+                    known as areas of tissue strain, in the body. It is used to locate & release spasms,
+                    decrease
+                    referred pain, improve
+                    circulation & help to restore proper postural alignment & connective tissue flexibility.</p>
+            </div>
 
+            <div class="col-11 col-sm-8 col-md-6 col-lg-5 mx-auto text-center">
+                <img class="massage-therapy-img mx-auto mx-auto" src="Deep-tissue-massage.jpg"
+                    alt="deep-tissue-massage-img">
+            </div>
+            <div class="massage-therapy-text-container col-12 col-md-6 col-lg-7 my-auto">
+                <h3 class="treatment-label">Deep Tissue</h3>
+                <p class="massage-therapy-summary mb-5 my-md-auto">Bodywork of the fascia and deeper layers of
+                    connective tissue
+                    in
+                    the body using slow, sustained & deep
+                    pressure at problem areas to relieve tension. Recommended for those with chronic stress,
+                    injuries and active
+                    individuals. Soreness can be common after this type of bodywork and drinking lots of water
+                    is
+                    essential to help with the
+                    removal of toxins released & recovery.</p>
+            </div>
 
+            <div class="col-11 col-sm-8 col-md-6 col-lg-5 mx-auto text-center">
+                <img class="massage-therapy-img mx-auto mx-auto" src="gua-sha.jpg" alt="gua-sha-scraping-img">
+            </div>
+            <div class="massage-therapy-text-container col-12 col-md-6 col-lg-7 my-auto">
+                <h3 class="treatment-label">Gua Sha/Scraping</h3>
+                <p class="massage-therapy-summary mb-5 my-md-auto">Ancient Chinese healing technique that involves
+                    scraping your
+                    skin
+                    with a massage tool to stimulate new
+                    oxygenated blood flow to the areas, break up connective tissue adhesion and relieve tension
+                    in
+                    the fascia and
+                    superficial muscles.</p>
+            </div>
 
+            <div class="col-11 col-sm-8 col-md-6 col-lg-5 mx-auto text-center">
+                <img class="massage-therapy-img mx-auto mx-auto" src="sports-massage.jpg" alt="sports-massage-img">
+            </div>
+            <div class="massage-therapy-text-container col-12 col-md-6 col-lg-7 my-auto">
+                <h3 class="treatment-label">Sports Massage</h3>
+                <p class="massage-therapy-summary mb-5 my-md-auto">Bodywork utilizing various techniques targeted toward
+                    athletic
+                    clients. It is used to speed up the healing of
+                    injuries, injury prevention, prepare the body for athletic activity and help muscles
+                    function
+                    properly to maximize
+                    performance.</p>
+            </div>
 
+            <div class="col-11 col-sm-8 col-md-6 col-lg-5 mx-auto text-center">
+                <img class="massage-therapy-img mx-auto mx-auto" src="craniosacral-massage.jpg"
+                    alt="craniosacral-massage-img">
+            </div>
+            <div class="massage-therapy-text-container col-12 col-md-6 col-lg-7 my-auto">
+                <h3 class="treatment-label">Craniosacral Massage</h3>
+                <p class="massage-therapy-summary mb-5 my-md-auto">A gentle, but powerful modality to aide in the
+                    treatment of
+                    headaches, chronic pain, IBS & anxiety. The
+                    practitioner uses light touch to assist the natural movement of cerebrospinal fluid within
+                    the
+                    craniosacral system.</p>
+            </div>
 
-                <div class="col-12 text-center">
-                    <a type="button" class=" btn btn-dark pricing-btn" href="pricing.html">Pricing and Packages</a>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-5 mx-auto text-center">
+                <img class="massage-therapy-img mx-auto mx-auto" src="swedish-massage.jpg" alt="swedish-massage-img">
+            </div>
+            <div class="massage-therapy-text-container col-12 col-md-6 col-lg-7 my-auto">
+                <h3 class="treatment-label">Swedish Massage</h3>
+                <p class="massage-therapy-summary mb-5 my-md-auto">Therapeutic relaxation techniques which include long,
+                    gliding strokes, rolling, kneading & percussive
+                    techniques to improve circulation and decrease pain, stress levels and muscle adhesion.</p>
+            </div>
 
-                </div>
+            <div class="col-12 col-lg-9 mx-auto text-center my-xl-5 my-3 massage-therapy-summary">
+                <p><em>
+                        *Various techniques will likely be combined into your unique treatment. Together we will
+                        determine the best treatment plan to meet your life and needs.
+                    </em></p>
+            </div>
 
-
+            <div class="col-12 text-center">
+                <a type="button" class=" btn btn-dark pricing-btn my-4" href="pricing.html">Pricing and Packages</a>
             </div>
         </div>
     </section>
 
-    <section class="infrared-sauna-main">
-        <div class="container-fluid">
-            <div class="row infrared-grid-main dark-box">
-                <div class="infrared-left-main col-lg-6 order-sm-1 my-auto">
-                    <div class="infrared-text-main text-center">
-                        <h2 class="infrared-heading-main mt-4 mt-md-4 mt-lg-0">Infrared Sauna & Chromotherapy</h2>
-                        <h3 class="infrared-subheading-main"><em>Revitalize Your Health and Recovery</em></h3>
-                        <p class="infrared-benefits-desktop-main mb-3">Infrared saunas produce the same infrared heat
-                            produced by the sun, without the harmful UV radiation, that is required for all living
-                            things for optimum health. This radiant heat penetrates the skin deeper than a traditional
-                            sauna, increasing the thermal energy in joints, muscles, and tissues.</p>
-                        <p class="infrared-benefits-desktop-main mb-3">Combine with your massage or use as a stand-alone
-                            treatment to help your body feel and perform at its best.</p>
-                    </div>
-                    <div class="col btn-optional-desktop text-center">
-                        <a type="button" class=" btn btn-light sauna-btn" href="infrared-sauna.html">Learn more</a>
-                    </div>
-
-                </div>
-                <div class="col order-3 btn-optional-mobile col-12 my-auto text-center">
-                    <a type="button" class=" btn btn-light sauna-btn mb-4" href="infrared-sauna.html">Learn more</a>
-
-                </div>
-                <div class="infrared-right-main col-lg-6 col-md-10 col-12 order-sm-2 my-auto mx-auto">
-
-                    <img class="infrared-img-main mx-auto" src="infrared-sauna.jpg" alt="infrared-sauna-img">
-                    <p class="infrared-benefits-mobile-main mt-3">Infrared saunas produce the same infrared heat
+    <section class="infrared-sauna-main container-fluid w-100">
+        <div class="row infrared-grid-main dark-box mb-0">
+            <div class="col-lg-6 order-sm-1 my-auto">
+                <div class="text-center my-3">
+                    <h2 class="infrared-heading-main my-4 p-0">Infrared Sauna & Chromotherapy</h2>
+                    <h3 class="infrared-subheading-main my-4"><em>Revitalize Your Health and Recovery</em></h3>
+                    <p class="infrared-benefits-desktop-main mb-3">Infrared saunas produce the same infrared heat
                         produced by the sun, without the harmful UV radiation, that is required for all living
                         things for optimum health. This radiant heat penetrates the skin deeper than a traditional
                         sauna, increasing the thermal energy in joints, muscles, and tissues.</p>
-                    <p class="infrared-benefits-mobile-main">Combine with your massage or use as a stand-alone
+                    <p class="infrared-benefits-desktop-main mb-3">Combine with your massage or use as a stand-alone
                         treatment to help your body feel and perform at its best.</p>
-                </div>
 
+                </div>
+                <div class="col btn-sauna-lg-container text-center">
+                    <a type="button" class=" btn btn-light sauna-btn my-4" href="infrared-sauna.html">Learn more</a>
+                </div>
             </div>
+
+            <div class="col-lg-6 col-md-10 col-12 order-sm-2 my-auto mx-auto text-center">
+                <img class="infrared-img-main mx-auto" src="infrared-sauna.jpg" alt="infrared-sauna-img">
+                <p class="infrared-benefits-mobile-main mt-3">Infrared saunas produce the same infrared heat
+                    produced by the sun, without the harmful UV radiation, that is required for all living
+                    things for optimum health. This radiant heat penetrates the skin deeper than a traditional
+                    sauna, increasing the thermal energy in joints, muscles, and tissues.</p>
+                <p class="infrared-benefits-mobile-main">Combine with your massage or use as a stand-alone
+                    treatment to help your body feel and perform at its best.</p>
+                <div class="col order-3 btn-sauna-sm-container col-12 my-auto text-center">
+                    <a type="button" class=" btn btn-light sauna-btn my-4" href="infrared-sauna.html">Learn more</a>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
     <section class="testimonials">
         <main id="carouselTestimonials" class="carousel slide" data-ride="carousel" data-pause="false">
-
             <div class="carousel-inner">
-                <div class="testimonial-box container-fluid mx-auto">
-                    <ol class="carousel-indicators">
+                <div class="testimonial-container container-fluid mx-auto">
+                    <ol class="carousel-indicators col-12 w-100 mx-auto mb-1">
                         <li data-target="#carouselMain" data-slide-to="0" class="active indicator"></li>
                         <li data-target="#carouselMain" data-slide-to="1" class="indicator"></li>
                         <li data-target="#carouselMain" data-slide-to="2" class="indicator"></li>
                     </ol>
                     <div class="row testimonial-text">
-
                         <div class="carousel-item active" data-interval="12000">
-                            <div class="col-lg-5 col-md-8 col-9 mx-auto my-auto testimonial-cell quote-1 gold-box">
+                            <div
+                                class="col-10 col-md-8 col-lg-6 col-xl-5 mx-auto testimonial-cell light-box py-0 d-flex flex-column align-items-center">
+                                <p class="testimonial-header mt-auto mb-0">"</p>
+                                <p class="testimonial-quote text-center mt-0 mb-auto">As a person who has utilized the
+                                    benefits of massage for a good 25 years, and been worked on by some of the best in
+                                    the
+                                    area over the years, I would greatly recommend Sara and Align Bodywork!! Her
+                                    knowledge of muscles, techniques and how to
+                                    manage tension, is wonderful, Great Job Sara!! I can’t wait for my next
+                                    appointment.”
 
-                                <div class="testimonial-content">
-
-                                    <p class="testimonial-header">"</p>
-                                    <p class="testimonial-quote text-center">As a person who has utilized the benefits
-                                        of massage
-                                        for a
-                                        good
-                                        25
-                                        years, and
-                                        been worked on by some of the best in the
-                                        area over the years, I would greatly recommend Sara and Align Bodywork!! Her
-                                        knowledge of muscles, techniques and how to
-                                        manage tension, is wonderful, Great Job Sara!! I can’t wait for my next
-                                        appointment. </p>
-
-                                </div>
+                                </p>
                             </div>
                         </div>
+
                         <div class="carousel-item" data-interval="12000">
-                            <div class="col-lg-5 col-md-8 col-9 mx-auto my-auto testimonial-cell quote-2 gold-box">
-                                <div class="testimonial-content">
-                                    <p class="testimonial-header">"</p>
-                                    <p class="testimonial-quote text-center">I recently have had extreme muscle
-                                        tightness in the
-                                        arms
-                                        and legs.
-                                        During my latest massage Sara concentrated on these.
-                                        It was amazing the degree of release of muscle tension. The numbness is gone and
-                                        I
-                                        can feel
-                                        much better blood flow to my
-                                        hands. Thank you, Sara.</p>
-                                </div>
+                            <div
+                                class="col-10 col-md-8 col-lg-6 col-xl-5 mx-auto testimonial-cell light-box py-0  d-flex flex-column align-items-center">
+                                <p class="testimonial-header mt-auto mb-0">"</p>
+                                <p class="testimonial-quote text-center mt-0 mb-auto">I recently have had extreme muscle
+                                    tightness in the
+                                    arms
+                                    and legs.
+                                    During my latest massage Sara concentrated on these.
+                                    It was amazing the degree of release of muscle tension. The numbness is gone and
+                                    I
+                                    can feel
+                                    much better blood flow to my
+                                    hands. Thank you, Sara.
+                                </p>
                             </div>
                         </div>
+
                         <div class="carousel-item" data-interval="12000">
-                            <div class="col-lg-5 col-md-8 col-9 mx-auto my-auto testimonial-cell quote-3 gold-box">
-                                <div class="testimonial-content">
-                                    <p class="testimonial-header">"</p>
-                                    <p class="testimonial-quote text-center">Thanks again, that was a great way to start
-                                        my week!!!
-                                        Felt
-                                        like a
-                                        million bucks all day – got in a pretty good workout
-                                        mid-afternoon and I have a bunch of hip maintenance stuff I do pretty routinely
-                                        – I
-                                        noticed
-                                        a huge improvement in hip
-                                        internal rotation on my bum hip which I’m super excited about.</p>
-                                </div>
+                            <div
+                                class="col-10 col-md-8 col-lg-6 col-xl-5 mx-auto testimonial-cell light-box py-0  d-flex flex-column align-items-center">
+                                <p class="testimonial-header mt-auto mb-0">"</p>
+                                <p class="testimonial-quote text-center mt-0 mb-auto">Thanks again, that was a great way
+                                    to start
+                                    my week!!!
+                                    Felt
+                                    like a
+                                    million bucks all day – got in a pretty good workout
+                                    mid-afternoon and I have a bunch of hip maintenance stuff I do pretty routinely
+                                    – I
+                                    noticed
+                                    a huge improvement in hip
+                                    internal rotation on my bum hip which I’m super excited about.
+                                </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -422,26 +396,23 @@
 
     <section class="contact">
         <div class="cta container-fluid">
-            <div class="row cta-grid align-items-center">
+            <div class="row align-items-center">
                 <div class="cta-text col">
                     <div class="text-container text-center">
-                        <h2 class="reach-out">Are you looking for a more holistic approach to managing your health,
+                        <h2 class="reach-out mx-auto">Are you looking for a more holistic approach to managing your
+                            health,
                             pain,
                             athletic
                             performance
                             or simply want
                             to feel
-                            restored and aligned? Get in touch to book a consultation.</h2>
-                        <div class="cta-img col-sm-9 col-md-7 col-lg-5 massage-table-mobile mx-auto">
-                            <div class="img-container">
-                                <img class="massage-table mx-auto my-auto" src="massage-table.jpg"
-                                    alt="massage-table-align-bodywork-room">
-                            </div>
+                            restored and aligned? Get in touch to book a consultation.
+                        </h2>
+                        <div class="massage-table-mobile col-12 col-sm-9 mx-auto">
+                            <img class="massage-table mx-auto my-auto" src="massage-table.jpg"
+                                alt="massage-table-align-bodywork-room">
                         </div>
                         <p class="green-bay">Green Bay, Wisconsin</p>
-                        <!-- <div class="m-3">
-                            <a href="mailto:alignbodywork@protonmail.com">alignbodywork@protonmail.com</a>
-                        </div> -->
                         <div class="m-3">
                             <a class="phone-number bg-glow" style="color:white;"
                                 href="tel:+1-920-680-7428">920-680-7428</a>
@@ -457,10 +428,8 @@
 
                     </div>
                 </div>
-                <div class="cta-img col-12 col-md-6 col-lg-4 massage-table-desktop">
-                    <div class="img-container">
-                        <img class="massage-table mx-auto my-auto" src="massage-table.jpg" alt="">
-                    </div>
+                <div class="cta-img col-md-6 col-lg-4 massage-table-desktop">
+                    <img class="massage-table mx-auto my-auto" src="massage-table.jpg" alt="">
                 </div>
             </div>
     </section>
