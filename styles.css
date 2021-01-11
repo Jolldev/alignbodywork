@@ -219,13 +219,6 @@ width: 100%;
     text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
 }
 
-.slide-caption-align{
-    font-family: var(--serif-font);
-    font-size: 1.8vw;
-    text-align: left;
-    width: 75%;
-}
-
 .portrait-caption-stones{
    color: var(--dark-font);
    font-size: 3.5vw;
@@ -242,13 +235,13 @@ width: 100%;
 /* Infrared slide (slide 4) */
 .infrared-slide-heading{
     font-family: var(--serif-font);
-    font-size: .9rem;
+    font-size: 4.5vw;
 }
 
-.slide-caption-infrared{
+.slide-caption{
     font-family: var(--serif-font);
-    font-size: .8rem;
-    line-height: 1.2;
+    font-size: 3.5vw;
+    line-height: 1.1;
     text-align: left;
     width: 75%;
 }
@@ -331,7 +324,7 @@ width: 100%;
 /* Testimonial section on main page */
 .testimonial-cell{
     font-family: 'Sorts Mill Goudy', serif;
-    /* padding: 3%; */
+    padding: 3%;
 }
 
 #carouselTestimonials .indicator{
@@ -574,7 +567,12 @@ width: 100%;
 }
 
 .infrared-slide-heading{
+    font-size: 3.3vw;
+}
+
+.slide-caption{
     font-size: 3vw;
+    line-height: 1.4;
 }
 
 /* Treatment options & Infrared Sauna sections on main page*/
@@ -782,6 +780,11 @@ width: 100%;
     font-size: 1.1rem;
     margin-top: 10%;
     -webkit-appearance: none;
+}
+
+.slide-caption{
+    font-size: 2.5vw;
+    line-height: 1;
 }
 }
 
