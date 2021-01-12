@@ -23,9 +23,6 @@ function windowSize() {
 }
 
 
-window.addEventListener('resize', windowSize);
-
-
 // Sets all main page carousel images (screen in portrait orientation) to the same height
 var maxHeightSlide = 0;
 $('.portrait-slide-img').each(function () {
@@ -33,7 +30,12 @@ $('.portrait-slide-img').each(function () {
     return maxHeightSlide;
 });
 $('.slide-1, .slide-2, .slide-3, .slide-4').css({ height: maxHeightSlide + 'px' });
-$('.slide-1, .slide-2, .slide-3, .slide-4').css({ maxHeight: "100%" });
+// $('.slide-1, .slide-2, .slide-3, .slide-4').css({ maxHeight: "100%" });
+
+
+window.addEventListener('load', windowSize);
+window.addEventListener('resize', windowSize);
+
 
 // Makes all testimonial text boxes on main page same height by matching heighest
 function carouselNormalization() {
