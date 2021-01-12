@@ -14,7 +14,7 @@ function setHeight() {
 var aspectRatio = window.innerWidth/window.innerHeight
 
 function windowSize() {
-    if (aspectRatio > 4/3) {
+    if (aspectRatio > 1.5 && window.innerHeight > 450) {
         setHeight();
     } else {
         // setHeightHalf();

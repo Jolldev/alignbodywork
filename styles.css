@@ -152,7 +152,7 @@ button.navbar-toggler:hover{
 
 /* Carousel */
 .carousel-control-prev, .carousel-control-next{
-    width: 7%;
+    width: 9%;
 }
 
 /* modifies carousel indicators */
@@ -724,7 +724,7 @@ width: 100%;
 
 
 /* These media queries only affect carousel on main page */
-@media (min-aspect-ratio: 4/3){
+@media (min-aspect-ratio: 6/4) and (min-height: 460px){
 .landscape-slide-container{
     display: flex;
     flex-direction: row;
