@@ -24,16 +24,18 @@ function windowSize() {
 
 
 // Sets all main page carousel images (screen in portrait orientation) to the same height
-var maxHeightSlide = 0;
+var maxHeightSlide = 200;
+function portraitHeight(){
 $('.portrait-slide-img').each(function () {
     maxHeightSlide = Math.max(maxHeightSlide, $(this).outerHeight());
     return maxHeightSlide;
 });
-$('.slide-1, .slide-2, .slide-3, .slide-4').css({ height: maxHeightSlide + 'px' });
+$('.slide-1, .slide-2, .slide-3, .slide-4').css({height: maxHeightSlide + 'px' });
 // $('.slide-1, .slide-2, .slide-3, .slide-4').css({ maxHeight: "100%" });
-
+};
 
 window.addEventListener('load', windowSize);
+window.addEventListener('load', portraitHeight);
 window.addEventListener('resize', windowSize);
 
 
