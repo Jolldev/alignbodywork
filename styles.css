@@ -716,8 +716,13 @@ width: 100%;
    line-height: 1.5;
 }
 
-.infrared-heading-main{
-    font-size: 4rem;
+.infrared-slide-heading{
+    font-size: 3vw;
+}
+
+.slide-caption{
+    font-size: 2vw;
+    line-height: 1.2;
 }
 }
 
@@ -782,13 +787,6 @@ width: 100%;
     -webkit-appearance: none;
 }
 
-.infrared-slide-heading{
-    font-size: 3vw;
-}
 
-.slide-caption{
-    font-size: 2vw;
-    line-height: 1.2;
-}
 }
 
