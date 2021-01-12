@@ -157,7 +157,7 @@ button.navbar-toggler:hover{
 
 /* modifies carousel indicators */
 .carousel-indicators li {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 50%;
     width: .6rem;
     height: .6rem;
@@ -747,6 +747,9 @@ width: 100%;
 .portrait-slide-container, .portrait-slide-img{
     display: none;
 }
+
+.carousel-indicators li {
+    background-color: rgb(121, 60, 32);
 
 .carousel-1-text{
    font-size: 3.5vw;
