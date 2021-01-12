@@ -10,6 +10,7 @@
   --light-font: rgb(240, 238, 238);
   --dark-font: black;
   /* --dark-not-box-bg: rgb(18, 20, 22); */
+  --dark-box-bg: rgb(65, 70, 75);
   --dark-not-box-bg:rgb(26, 29, 32);
   --bg-glow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
 }
@@ -191,7 +192,7 @@ button.navbar-toggler:hover{
 }
 
 .carousel-textbox-light{
-    background-color: var(--dark-not-box-bg);
+    background-color: var(--dark-box-bg);
     color: var(--light-font);
 }
 
