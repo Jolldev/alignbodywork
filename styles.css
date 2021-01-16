@@ -1,15 +1,16 @@
 :root {
-  /* --section-padding: 5%;
-  --section-margin: 5%; */
+  --section-padding: 10% 2%;
+  --section-margin: 15% 0;
   --serif-font: 'EB Garamond', serif;
   --sans-serif-1: 'Roboto', sans-serif;
   --sans-serif-2: 'Open Sans', sans-serif;
   --cursive-font: 'Dancing Script', cursive;
   --handwriting-font: 'Handlee', cursive;
-  --infrared-page-headings: #BACFE6;
+  --cursive-heading: #BACFE6;
   --light-font: rgb(240, 238, 238);
   --dark-font: black;
   /* --dark-not-box-bg: rgb(18, 20, 22); */
+  --light-box-bg: rgb(190, 180, 150);
   --dark-box-bg: rgb(65, 70, 75);
   --dark-not-box-bg:rgb(26, 29, 32);
   --bg-glow: 0 0 20px #996f35, 0 0 15px #996f35, 0 0 10px #996f35;
@@ -37,23 +38,21 @@ body{
 }
 
 .light-box{
-    /* background-color: rgb(160, 142, 63); */
-    background-color: rgb(190, 180, 150);
+    background-color: var(--light-box-bg);
     border-radius: 10px;
     box-shadow: 0 0 10px 1px rgb(39, 35, 20);
     color: var(--dark-font);
-    padding: 4% 3%;
-    margin: 15% 0;
+    padding: var(--section-padding);
+    margin: var(--section-margin);
 }
 
 .dark-box{
-    /* background-color: rgb(52, 58, 64); */
-    background-color: rgb(65, 70, 75);
+    background-color: var(--dark-box-bg);
     border-radius: 10px;
     box-shadow: 0 0 10px 1px rgb(31, 30, 30);
     color: var(--light-font);
-    padding: 4% 3%;
-    margin: 15% 0;
+    padding: var(--section-padding);
+    margin: var(--section-margin);
 }
 
 .btn:hover{
@@ -244,22 +243,18 @@ width: 100%;
 
 /* Infrared slide (slide 4) */
 .infrared-slide-heading{
-    font-family: var(--serif-font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4.5vw;
+    font-weight: 400;
 }
 
 .slide-caption{
-    font-family: var(--serif-font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3.5vw;
+    font-weight: 400;
     line-height: 1.1;
     text-align: left;
     width: 75%;
-}
-
-.infrared-carousel-and-more:hover{
-    color: rgb(252, 164, 49);
-    text-shadow: var(--bg-glow);
-    text-decoration: none;
 }
 
 
@@ -303,9 +298,9 @@ width: 100%;
     width: 100%;
 }
 
-.pricing-btn,.sauna-btn{
+.pricing-btn,.sauna-btn,.contact-btn{
     font-family: var(--sans-serif-1);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 3% auto 1%;
     transition: .3s;
     -webkit-appearance: none;
@@ -381,6 +376,17 @@ width: 100%;
     color: rgb(241, 225, 133);
 }
 
+.social-icon-dark {
+  color: var(--dark-box-bg);
+  font-size: 1.5rem;
+  padding: 0 20px;
+  transition: .5s;
+}
+
+.social-icon-dark:hover {
+  color :rgba(255, 208, 0, 0.877);
+}
+
 /* .Copyright {
   bottom: 0;
   color: rgb(152, 215, 230);
@@ -397,11 +403,6 @@ width: 100%;
     margin: 5px auto 10%;
     width: 100%;
 }  
-
-.about-box,.infrared-box{
-    margin-top: 3%;
-    padding: 10% 2%;
-}
 
 .about-me-text-container{
     font-family: var(--sans-serif-2);
@@ -426,14 +427,14 @@ width: 100%;
     box-shadow: 5px 5px 10px 5px rgb(8, 6, 19);
 }
 
-.infrared-page-big-headings{
-    color: var(--infrared-page-headings);
+.cursive-big-heading{
+    color: var(--cursive-heading);
     font-size: 2.75rem;
     font-family: var(--cursive-font);
 }
 
-.infrared-page-headings{
-     color: var(--infrared-page-headings);
+.cursive-heading{
+     color: var(--cursive-heading);
     font-size: 2.25rem;
     font-family: var(--cursive-font);
 }
@@ -509,7 +510,71 @@ width: 100%;
     color: rgb(9, 90, 9);
 }
 
-/* footer for all pages besides the main page */
+/* Contact Me page */
+.contact-page-landscape{
+    display: none;
+}
+
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-me-heading{
+    /* color: var(--dark-font); */
+    font-size: 4rem;
+    font-family: var(--cursive-font);
+}
+
+.contact-page-text{
+    background-color: #fff;
+    border-radius: 10px;
+    color: var(--dark-box-bg);
+    font-size: 1.25rem;
+    padding: 10% 4%;
+    margin: var(--section-margin);
+    width: 100%;
+}
+
+.forms-container{
+    background-color: var(--dark-box-bg);
+    border-radius: 10px;
+    color: var(--light-font);
+    padding: 10% 6%;
+    margin: var(--section-margin);
+    width: 100%;
+}
+
+.form-group:focus-within{
+transform: scale(1.05, 1.05);
+transition: .3s;
+}
+
+.form-control:invalid:focus{
+border-color: red;
+}
+
+.contact-footer{
+     background-color: rgb(18, 20, 22);
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.contact-align{
+    color: var(--light-font);
+    font-family: var(--cursive-font);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.forms-container label{
+    font-size: 1.5rem;
+}
+
+/* footer for infrared, about me, and pricing pages*/
 .pages-footer{
      background-color: rgb(18, 20, 22);
      bottom: -80px;
@@ -520,18 +585,23 @@ width: 100%;
 }
 
 
-
 @media (min-width:768px){
+:root {
+  --section-padding: 5%;
+  --section-margin: 5% 2%;
+}
+
+
 .light-box{
     box-shadow: 0 0 30px 2px rgb(29, 26, 15);
-    margin: 5% 2%;
-    padding: 5%;
+    margin: var(--section-margin);
+    padding: var(--section-padding);
 }
 
 .dark-box{
     box-shadow: 0 0 30px 2px rgb(31, 30, 30);
-    margin: 5% 2%;
-    padding: 5%;
+    margin: var(--section-margin);
+    padding: var(--section-padding);
 }
 
 .main-page-font{
@@ -613,19 +683,34 @@ width: 100%;
     color: rgb(3, 53, 3);
     font-size: 1.05rem;
 }
+
+/* Contact me page */
+.contact-page-text{
+    padding: var(--section-padding);
+    margin: var(--section-margin);
+    width: 80%;
+}
+
+.forms-container{
+    padding: var(--section-padding);
+    margin: var(--section-margin);
+    width: 80%;
+}
 }
 
 
 
 @media (min-width:992px){
+:root {
+  --section-margin: 5%;
+}
+
 .light-box{
-    margin: 5%;
-    padding: 5%;
+    margin: var(--section-margin);
 }
 
 .dark-box{
-    margin: 5%;
-    padding: 5%;
+    margin: var(--section-margin);
 }
 
 .main-page-font{
@@ -668,16 +753,29 @@ width: 100%;
 }
 
 /* Infrared page */
-.infrared-page-big-headings{
+.cursive-big-heading{
     font-size: 3.5rem;
 }
 
-.infrared-page-headings{
+.cursive-heading{
     font-size: 2.75rem;
 }
 
 .infrared-text-container{
     font-size: 1.2rem;
+}
+
+/* Contact me page */
+.contact-page-text{
+    padding: var(--section-padding);
+    margin: var(--section-margin);
+    width: 65%;
+}
+
+.forms-container{
+    padding: var(--section-padding);
+    margin: var(--section-margin);
+    width: 65%;
 }
 }
 
@@ -701,8 +799,8 @@ width: 100%;
 }
 
 .slide-caption{
-    font-size: 2vw;
-    line-height: 1.2;
+    font-size: 1.75vw;
+    line-height: 1.4;
 }
 }
 
@@ -770,6 +868,38 @@ width: 100%;
     -webkit-appearance: none;
 }
 
+/* contact me page */
+.contact-page-landscape{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: var(--section-margin);
+}
+
+.contact-page-portrait{
+    display: none;
+}
+
+.contact-page-text{
+    background-color: #fff;
+    border-radius: 10px 0 0 10px ;
+    color: var(--dark-box-bg);
+    font-size: 1.4rem;
+    padding: 4%;
+    width: 100%;
+}
+
+.forms-container{
+    background-color: var(--dark-box-bg);
+    border-radius: 0px 10px 10px 0;
+    color: var(--light-font);
+    padding: 4%;
+    width: 100%;
+}
+
+.contact-page .socials{
+    margin-bottom: 0;
+}
 
 }
 
