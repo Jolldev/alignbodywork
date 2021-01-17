@@ -357,13 +357,17 @@ width: 100%;
     font-family: var(--serif-font);
 }
 
+.contact .main-page-font{
+    font-size: 1.3rem;
+}
+
 .green-bay{
     color: rgb(85, 170, 77);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .phone-number{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 10%;
 }
 
