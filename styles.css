@@ -637,13 +637,23 @@ box-shadow: none;
     margin: 10px;
 }
 
-/* hides "home" from navbar when hamburger button appears */
+/* Makes navbar appear when hamburger button goes away*/
 .navbar{
     background-color: rgba(0, 0, 0, 0.7);
+    padding:2px;
 }
 
 #navbarNavDropdown .nav-item .current-page{
 color: rgb(187, 187, 187);
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item:hover{
+    background-color: transparent;
+    transform: scale(1);
 }
 
 #nav .nav-link{
