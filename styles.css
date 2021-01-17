@@ -160,6 +160,10 @@ button.navbar-toggler:hover{
 }
 
 /* Carousel */
+.arrow {
+  display: none;
+}
+
 #carouselMain .carousel-control-prev-icon,#carouselMain .carousel-control-next-icon{
     display: none;
 }
@@ -826,6 +830,7 @@ box-shadow: none;
 
 /* These media queries only affect carousel on main page */
 @media (min-aspect-ratio: 6/4) and (min-height: 460px){
+
 .landscape-slide-container{
     display: flex;
     flex-direction: row;
