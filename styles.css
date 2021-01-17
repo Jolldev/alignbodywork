@@ -114,6 +114,11 @@ ul, ol{
     background-color: transparent;
  }
 
+ /* Only shows "Services" in navbar on landscape screen */
+ .lanscape-service-link{
+     display: none;
+}
+
 #navbarNavDropdown .nav-item .current-page{
 color: rgb(105, 105, 105);
 }
@@ -841,6 +846,11 @@ color: rgb(187, 187, 187);
 
 /* These media queries only affect carousel on main page */
 @media (min-aspect-ratio: 6/4) and (min-height: 460px){
+
+    /* Only shows "Services" in navbar on landscape screen */
+ .lanscape-service-link{
+     display: inline-block;
+}
 
 .landscape-slide-container{
     display: flex;
