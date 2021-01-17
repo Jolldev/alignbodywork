@@ -128,6 +128,7 @@ color: rgb(105, 105, 105);
     display: inline-block;
     font-family: var(--sans-serif);
     font-size: 1rem;
+    font-weight: 600;
     letter-spacing: normal;
     padding: 10px 0;
     text-align: right;
@@ -647,6 +648,7 @@ color: rgb(187, 187, 187);
 
 #nav .nav-link{
     color: var(--light-font);
+    font-weight: 500;
     letter-spacing: 1.8px;
     padding: 0 3vw;
 }
