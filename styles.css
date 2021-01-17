@@ -4,7 +4,7 @@
   --serif-font: 'EB Garamond', serif;
   --sans-serif: Arial, Helvetica, sans-serif;
   --cursive-font: 'Dancing Script', cursive;
-  /* --handwriting-font: 'Handlee', cursive; */
+  --handwriting-font: 'Handlee', cursive;
   --cursive-heading: #BACFE6;
   --light-font: rgb(240, 238, 238);
   --dark-font: black;
@@ -323,7 +323,6 @@ width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Sorts Mill Goudy', serif;
 }
 
 #carouselTestimonials .indicator{
@@ -342,10 +341,11 @@ width: 100%;
 .testimonial-header{
     font-size: 5rem;
     text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
 }
 
 .testimonial-quote{
-    font-family: var(--sans-serif);
+    font-family: var(--handwriting-font);
     font-size: 1.2rem;
     line-height: 1.1;
 }
@@ -683,7 +683,7 @@ color: rgb(187, 187, 187);
 }
 
 .testimonial-quote{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
 }
 
