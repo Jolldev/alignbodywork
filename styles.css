@@ -115,6 +115,11 @@ ul, ol{
     background-color: transparent;
  }
 
+ /* hides home on navbar because home-hamburger is active in dropdown toggler */
+ .home-navbar{
+    display:none;
+}
+
 #nav .nav-link{
     color: var(--dark-font);
     display: inline-block;
@@ -624,6 +629,15 @@ box-shadow: none;
 .brand-logo{
     height: 140px;
     margin: 10px;
+}
+
+/* hides "home" from navbar when hamburger button appears */
+.home-hamburger{
+    display: none;
+}
+
+.home-navbar{
+    display:block;
 }
 
 .navbar{
