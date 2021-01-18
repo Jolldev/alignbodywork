@@ -113,12 +113,6 @@ ul, ol{
 .navbar{
     background-color: transparent;
  }
-
- /* Only shows "Services" in navbar on landscape screen */
- .lanscape-service-link{
-     display: none;
-}
-
 #navbarNavDropdown .nav-item .current-page{
 color: rgb(105, 105, 105);
 }
@@ -775,9 +769,9 @@ color: rgb(187, 187, 187);
     font-size: 5.5rem;
 }
 
-.massage-therapy-img{
-    width: 85%;
-}
+/* .massage-therapy-img{
+    width: 100%;
+} */
 
 .treatment-label{
     font-size: 1.8rem;   
@@ -860,12 +854,6 @@ color: rgb(187, 187, 187);
 
 /* These media queries only affect carousel on main page */
 @media (min-aspect-ratio: 6/4) and (min-height: 460px){
-
-    /* Only shows "Services" in navbar on landscape screen */
- .lanscape-service-link{
-     display: inline-block;
-}
-
 .landscape-slide-container{
     display: flex;
     flex-direction: row;
