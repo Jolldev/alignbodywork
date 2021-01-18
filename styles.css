@@ -356,8 +356,8 @@ width: 100%;
 }
 
 .green-bay{
-    color: rgb(85, 170, 77);
-    font-size: 1.1rem;
+    color: rgb(77, 159, 170);
+    font-size: 1rem;
 }
 
 .phone-number{
@@ -681,6 +681,10 @@ color: rgb(187, 187, 187);
     margin-bottom: 1rem;
 }
 
+.infrared-img-main{ 
+    width: 70%;
+}
+
 /* Testimonial carousel on main page */
 .testimonial-cell{
    padding: 3%;
@@ -772,6 +776,10 @@ color: rgb(187, 187, 187);
 /* .massage-therapy-img{
     width: 100%;
 } */
+
+.infrared-img-main{ 
+    width: 100%;
+}
 
 .treatment-label{
     font-size: 1.8rem;   
