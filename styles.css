@@ -480,9 +480,9 @@ width: 100%;
 }
 
 .pricing-heading{
-    font-family: var(--serif-font);
+    font-family: var(--cursive-font);
     font-size: 4.5rem;
-    margin: 2% auto 3%;
+    margin: 2% auto;
 }
 
 .pricing-cell{
