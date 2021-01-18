@@ -115,7 +115,7 @@ ul, ol{
  }
 
  /* Only shows "Services" in navbar on landscape screen */
- .lanscape-service-link{
+ .landscape-service-link{
      display: none;
 }
 
@@ -362,8 +362,8 @@ width: 100%;
 }
 
 .green-bay{
-    color: rgb(85, 170, 77);
-    font-size: 1.1rem;
+    color: rgb(128, 192, 211);
+    font-size: 1rem;
 }
 
 .phone-number{
@@ -862,7 +862,7 @@ color: rgb(187, 187, 187);
 @media (min-aspect-ratio: 6/4) and (min-height: 460px){
 
     /* Only shows "Services" in navbar on landscape screen */
- .lanscape-service-link{
+ .landscape-service-link{
      display: inline-block;
 }
 
