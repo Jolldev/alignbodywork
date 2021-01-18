@@ -113,6 +113,12 @@ ul, ol{
 .navbar{
     background-color: transparent;
  }
+
+ /* Only shows "Services" in navbar on landscape screen */
+ .lanscape-service-link{
+     display: none;
+}
+
 #navbarNavDropdown .nav-item .current-page{
 color: rgb(105, 105, 105);
 }
@@ -356,8 +362,8 @@ width: 100%;
 }
 
 .green-bay{
-    color: rgb(77, 159, 170);
-    font-size: 1rem;
+    color: rgb(85, 170, 77);
+    font-size: 1.1rem;
 }
 
 .phone-number{
@@ -681,10 +687,6 @@ color: rgb(187, 187, 187);
     margin-bottom: 1rem;
 }
 
-.infrared-img-main{ 
-    width: 70%;
-}
-
 /* Testimonial carousel on main page */
 .testimonial-cell{
    padding: 3%;
@@ -773,12 +775,8 @@ color: rgb(187, 187, 187);
     font-size: 5.5rem;
 }
 
-/* .massage-therapy-img{
-    width: 100%;
-} */
-
-.infrared-img-main{ 
-    width: 100%;
+.massage-therapy-img{
+    width: 85%;
 }
 
 .treatment-label{
@@ -862,6 +860,12 @@ color: rgb(187, 187, 187);
 
 /* These media queries only affect carousel on main page */
 @media (min-aspect-ratio: 6/4) and (min-height: 460px){
+
+    /* Only shows "Services" in navbar on landscape screen */
+ .lanscape-service-link{
+     display: inline-block;
+}
+
 .landscape-slide-container{
     display: flex;
     flex-direction: row;
