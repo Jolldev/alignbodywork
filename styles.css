@@ -1,8 +1,26 @@
+@font-face {
+    font-family: 'alluraregular';
+    src: url('fonts/allura-regular-webfont.woff2') format('woff2'),
+         url('fonts/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
   --section-padding: 10% 2%;
   --section-margin: 15% 0;
   --serif-font: 'EB Garamond', serif;
-  --sans-serif: Arial, Helvetica, sans-serif;
+  --sans-serif: 'open_sansregular';
   --cursive-font: 'Dancing Script', cursive;
   --handwriting-font: 'Handlee', cursive;
   --cursive-heading: #BACFE6;
@@ -72,10 +90,10 @@ ul, ol{
 /* Main page fonts (Treatment options summary, infrared sauna description, contact section) */
 .main-page-font{
    font-family: var(--serif-font);
-   font-size: 1.3rem;
+   font-size: 1.1rem;
    font-weight: 400;
    line-height: 1.2;
-   text-align: justify;
+   text-align: left;
 }
 
 /* logo top left corner */
@@ -255,13 +273,13 @@ width: 100%;
 
 /* Infrared slide (slide 4) */
 .infrared-slide-heading{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 4vw;
     font-weight: 400;
 }
 
 .slide-caption{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 3.2vw;
     font-weight: 400;
     line-height: 1.3;
@@ -271,6 +289,8 @@ width: 100%;
 
 
 /* Treatment options & Infrared Sauna sections on main page*/
+
+
 .massage-therapy-text-container{
    align-items: center;
    display: flex;
@@ -296,7 +316,7 @@ width: 100%;
 
 .infrared-subheading-main{
     color: rgb(253, 227, 192);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 1.1rem;
 }
 
@@ -311,7 +331,7 @@ width: 100%;
 }
 
 .pricing-btn,.sauna-btn,.contact-btn{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 1.2rem;
     margin: 3% auto 1%;
     transition: .3s;
@@ -423,13 +443,13 @@ width: 100%;
 }  
 
 .about-me-text-container{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 1.1rem;
     width: 100%;
 }
 
 .about-me-reach-out{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 1rem;
 }
 
@@ -458,7 +478,7 @@ width: 100%;
 }
 
 .infrared-text-container{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 1.1rem;
     line-height: 1.5;
     width: 100%;
@@ -486,7 +506,7 @@ width: 100%;
 }
 
 .pricing-cell{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     padding: 10px;
 }
 
@@ -499,7 +519,7 @@ width: 100%;
 }
 
 .header-text{
-   font-family:Arial, Helvetica, sans-serif;
+   font-family:'open_sansregular';
    font-size: 1.6rem;
 }
 
@@ -759,7 +779,8 @@ color: rgb(187, 187, 187);
 
 .main-page-font{
    font-size: 1.5rem;
-   line-height: 1.3;
+   line-height: 1;
+   text-align: justify;
 }
 
 #carouselMain .carousel-control-prev,#carouselMain .carousel-control-next{
@@ -775,9 +796,9 @@ color: rgb(187, 187, 187);
     font-size: 5.5rem;
 }
 
-.massage-therapy-img{
+/* .massage-therapy-img{
     width: 85%;
-}
+} */
 
 .treatment-label{
     font-size: 1.8rem;   
@@ -839,6 +860,10 @@ color: rgb(187, 187, 187);
     font-size: 2.1rem;   
     letter-spacing: .8px;
     margin-bottom: 2rem;
+}
+
+.main-page-font{
+   line-height: 1.2;
 }
 
 .infrared-slide-heading{
@@ -911,8 +936,8 @@ color: rgb(187, 187, 187);
 }
 
 .about-carousel-caption{
-   font-family:Arial, Helvetica, sans-serif;
-   font-size: 1.8vw;
+   font-family:'open_sansregular';
+   font-size: 1.3rem;
    letter-spacing: 1px;
    line-height: 1.5;
    width: 80%;
@@ -920,7 +945,7 @@ color: rgb(187, 187, 187);
 
 .about-btn{
     /* background-color: rgb(226, 195, 100); */
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'open_sansregular';
     font-size: 1.1rem;
     margin-top: 10%;
     -webkit-appearance: none;
