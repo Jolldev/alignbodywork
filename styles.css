@@ -1,28 +1,10 @@
-@font-face {
-    font-family: 'alluraregular';
-    src: url('fonts/allura-regular-webfont.woff2') format('woff2'),
-         url('fonts/allura-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 :root {
   --section-padding: 10% 2%;
   --section-margin: 15% 0;
   --serif-font: 'EB Garamond', serif;
-  --sans-serif: 'open_sansregular';
+  --sans-serif: 'Open Sans', sans-serif;
   --cursive-font: 'Dancing Script', cursive;
-  --handwriting-font: 'Handlee', cursive;
+  --handwriting-font: 'The Girl Next Door', cursive;;
   --cursive-heading: #BACFE6;
   --light-font: rgb(240, 238, 238);
   --dark-font: black;
@@ -93,13 +75,23 @@ ul, ol{
    font-size: 1.3rem;
    font-weight: 400;
    line-height: 1.2;
-   text-align: left;
+   text-align: justify;
 }
 
-/* logo top left corner */
+/* Hyphens selected long words to allow the use of text-align: justified; */
+.hyphenate{
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+/* logo top of page*/
 .brand-logo{
     animation-name: glow-in-out;
-    animation-duration: 4s;
+    animation-duration: 4.5s;
     animation-timing-function: ease-in-out;
     border-radius: 50%;
     margin: 15px 0 0;
@@ -186,10 +178,6 @@ button.navbar-toggler:hover{
 }
 
 /* Carousel */
-.arrow {
-  display: none;
-}
-
 #carouselMain .carousel-control-prev-icon,#carouselMain .carousel-control-next-icon{
     display: none;
 }
@@ -205,20 +193,16 @@ button.navbar-toggler:hover{
 
 
 /* Image options dependent on screen size within carousel */
-.landscape-slide-container, .landscape-slide-img,.landscape-caption-stones{
+.landscape-slide-container, .landscape-slide-img, .landscape-caption-stones{
     display: none;
 }
 
 .portrait-slide-container{
-    display: flex;
-    direction: column;
-    position: relative;
-    /* object-fit: cover; */
     width: 100%;
 }
 
 .portrait-slide-img{
-    display: block;
+    /* object-fit: contain; */
     width: 100%;
     position: relative;
 }
@@ -227,6 +211,7 @@ button.navbar-toggler:hover{
 .carousel-textbox-dark{
     background-color: rgb(25, 27, 27);
     color: var(--light-font);
+    position: relative;
 }
 
 .carousel-textbox-light{
@@ -236,66 +221,26 @@ button.navbar-toggler:hover{
 
 /* Massage room slide (slide #1) */
 .carousel-1-text{
-color: var(--dark-font) !important;
-font-size: 3.6vw;
-font-weight: 600;
-font-family: 'Barlow Condensed', sans-serif;
-letter-spacing: 1px;
-position: absolute;
-text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
-top: 15%;
-white-space: nowrap;
-width: 100%;
+display: none;
 }
 
 
 /* Stones slide (slide 2) */
-.fancy-align{
-    font-family: var(--cursive-font);
-    font-size: 5vw;
-    font-weight: 700;
-    position: relative;
-    text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
-}
-
-.portrait-caption-stones{
-   color: var(--dark-font);
-   font-size: 3.5vw;
-   font-weight: 600;
-   font-family: 'Barlow Condensed', sans-serif;
-   left: 3%;
-   letter-spacing: 1px;
-   position: absolute;
-   top: 3%;
-   width: 60%;
-}
-
-
-/* Infrared slide (slide 4) */
-.infrared-slide-heading{
-    font-family:'open_sansregular';
-    font-size: 4vw;
-    font-weight: 400;
-}
 
 .slide-caption{
-    font-family:'open_sansregular';
+    font-family: var(--serif-font);
     font-size: 3.2vw;
-    font-weight: 400;
     line-height: 1.3;
-    text-align: left;
     width: 75%;
 }
 
 
 /* Treatment options & Infrared Sauna sections on main page*/
-
-
 .massage-therapy-text-container{
-   align-items: center;
    display: flex;
    font-family: var(--serif-font);
    flex-direction: column;
+   justify-items: center;
 }
 
 .massage-therapy-heading{
@@ -316,7 +261,7 @@ width: 100%;
 
 .infrared-subheading-main{
     color: rgb(253, 227, 192);
-    font-family:'open_sansregular';
+    font-family: var(--sans-serif);
     font-size: 1.1rem;
 }
 
@@ -331,7 +276,7 @@ width: 100%;
 }
 
 .pricing-btn,.sauna-btn,.contact-btn{
-    font-family:'open_sansregular';
+    font-family: var(--sans-serif);
     font-size: 1.2rem;
     margin: 3% auto 1%;
     transition: .3s;
@@ -339,10 +284,13 @@ width: 100%;
 }
 
 /* Testimonial section on main page */
+
 .testimonial-cell{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
 }
 
 #carouselTestimonials .indicator{
@@ -354,8 +302,7 @@ width: 100%;
 }
 
 #carouselTestimonials .carousel-control-next-icon,#carouselTestimonials .carousel-control-prev-icon{
-   filter: brightness(0);
-   transform: scale(1.2);
+    display: none;
 }
 
 .testimonial-header{
@@ -366,8 +313,8 @@ width: 100%;
 
 .testimonial-quote{
     font-family: var(--handwriting-font);
-    font-size: 1.2rem;
-    line-height: 1.1;
+    font-size: 1.25rem;
+    line-height: 1.2;
 }
 
 /* Main page contact/footer section */
@@ -378,7 +325,7 @@ width: 100%;
 }
 
 .contact .main-page-font{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .green-bay{
@@ -425,49 +372,56 @@ width: 100%;
   color :rgba(255, 208, 0, 0.877);
 }
 
-/* .Copyright {
-  bottom: 0;
-  color: rgb(152, 215, 230);
-  font-size: .75rem;
-  margin: 20px auto 10px;
-  position: absolute;
-  width: 100%;
-} */
+.to-top{
+    bottom: 15px;
+    color: rgb(77, 94, 107);
+    left: 20px;
+    position: absolute;
+
+}
+
+.website-by{
+    color: rgb(77, 94, 107);
+    font-family: var(--sans-serif);
+    font-size: 11px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.to-top:hover{
+   text-decoration: none;
+}
 
 /* About me & Infrared sauna page */
-.headshot{
+
+/* page-heading is used on pricing page also */
+.page-heading{
+    font-family: var(--cursive-font);
+    font-size: 4.5rem;
+    margin: 2% auto;
+}
+
+.headshot, .infrared-page-img-top, .infrared-page-img-bot{
     border-radius: 15px;
-    box-shadow: 0 0 10px 1px rgb(48, 46, 18);
+    box-shadow: 2px 2px 15px 2px rgb(19, 17, 6);
     margin: 5px auto 10%;
-    width: 100%;
+    width: 90%;
 }  
 
-.about-me-text-container{
-    font-family:'open_sansregular';
+.about-me-text-container, .infrared-text-container{
+    font-family: var(--sans-serif);
     font-size: 1.1rem;
     width: 100%;
 }
 
 .about-me-reach-out{
-    font-family:'open_sansregular';
+    font-family: var(--sans-serif);
     font-size: 1rem;
-}
-
-.infrared-page-img-top{
-    border-radius: 15px;
-    width: 100%;
-    box-shadow: 5px 5px 10px 5px rgb(8, 6, 19);
-}
-
-.infrared-page-img-bot{
-    border-radius: 15px;
-    width: 100%;
-    box-shadow: 5px 5px 10px 5px rgb(8, 6, 19);
 }
 
 .cursive-big-heading{
     color: var(--cursive-heading);
-    font-size: 2.75rem;
+    font-size: 2.3rem;
     font-family: var(--cursive-font);
 }
 
@@ -475,13 +429,6 @@ width: 100%;
      color: var(--cursive-heading);
     font-size: 2.25rem;
     font-family: var(--cursive-font);
-}
-
-.infrared-text-container{
-    font-family:'open_sansregular';
-    font-size: 1.1rem;
-    line-height: 1.5;
-    width: 100%;
 }
 
 .infrared-link{
@@ -499,19 +446,14 @@ width: 100%;
     width: 100%;
 }
 
-.page-heading{
-    font-family: var(--cursive-font);
-    font-size: 4.5rem;
-    margin: 2% auto;
-}
-
 .pricing-cell{
-    font-family:'open_sansregular';
+    font-family: var(--sans-serif);
     padding: 10px;
 }
 
 .pricing-box{
     background-color: #fff;
+    box-shadow: 0 0 10px 0px rgb(68, 68, 68);
     border-radius: 5px;
     color: black;
     height: 100%;
@@ -519,7 +461,7 @@ width: 100%;
 }
 
 .header-text{
-   font-family:'open_sansregular';
+   font-family: var(--sans-serif);
    font-size: 1.6rem;
 }
 
@@ -534,7 +476,7 @@ width: 100%;
 }
 
 .infrared-box-header{
-   background-color: rgb(175, 156, 70);
+   background-color: var(--light-box-bg);
    color: black;
    border-radius: 5px 5px 0 0;
 }
@@ -561,7 +503,6 @@ width: 100%;
 }
 
 .contact-me-heading{
-    /* color: var(--dark-font); */
     font-size: 3.5rem;
     font-family: var(--cursive-font);
 }
@@ -577,6 +518,9 @@ width: 100%;
 }
 
 .forms-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--dark-box-bg);
     border-radius: 10px;
     color: var(--light-font);
@@ -588,6 +532,15 @@ width: 100%;
 .form-group:focus-within{
 transform: scale(1.05, 1.05);
 transition: .3s;
+}
+
+.form-label{
+    margin-top:1rem;
+    margin-bottom:0;
+}
+
+.form-control{
+    margin: 2% auto;
 }
 
 .form-control:valid:focus{
@@ -614,9 +567,10 @@ box-shadow: none;
     font-weight: 400;
 }
 
-.forms-container label{
-    font-size: 1.5rem;
+.forms-container label, .php-sent{
+    font-size: 1.3rem;
 }
+
 
 /* footer for infrared, about me, and pricing pages*/
 .pages-footer{
@@ -627,6 +581,38 @@ box-shadow: none;
     position: absolute;
     width: 100%;
 }
+
+
+@media (max-width:330px){
+/* shrinks recaptcha on Iphone 5 size screens */
+.g-recaptcha {
+transform: scale(0.85);
+-webkit-transform:scale(0.85);
+transform-origin:0 0;
+-webkit-transform-origin:0 0;
+max-width: 240px;
+}
+}
+
+
+@media (min-width:576px){
+/* Infrared sauna image main page */
+.infrared-img-main{
+    margin: 2%;
+    width: 60%;
+}
+
+/* Infrared page */
+.infrared-page-img-top, .headshot{
+    margin-top: 10px;
+    width: 35%;
+}
+
+.infrared-page-img-bot{
+    width: 80%;
+}
+}
+
 
 
 @media (min-width:768px){
@@ -649,6 +635,7 @@ box-shadow: none;
 }
 
 .main-page-font{
+    font-size: 1.2rem;
    line-height: 1;
 }
 
@@ -683,11 +670,6 @@ color: rgb(187, 187, 187);
     padding: 0 3vw;
 }
 
-
-.carousel-1-text{
-   font-weight: 400;
-}
-
 .infrared-slide-heading{
     font-size: 3.3vw;
 }
@@ -708,12 +690,18 @@ color: rgb(187, 187, 187);
 }
 
 /* Testimonial carousel on main page */
+#carouselTestimonials .carousel-control-next-icon,#carouselTestimonials .carousel-control-prev-icon{
+    display: block;
+   filter: brightness(0);
+   transform: scale(1.2);
+}
+
 .testimonial-cell{
    padding: 3%;
 }
 
 .testimonial-quote{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4;
 }
 
@@ -726,20 +714,24 @@ color: rgb(187, 187, 187);
     display: none;
 }
 
-/* Infrared page */
-.infrared-page-img-top{
-    margin-top: 10px;
-    width: 35%;
-}
-
 .infrared-page-img-bot{
-    border-radius: 15px;
     width: 100%;
 }
 
-.infrared-text-container{
+.infrared-text-container, .about-me-text-container{
     font-size: .95rem;
     line-height: 1.35;
+}
+
+/* Infrared page */
+.cursive-big-heading{
+    font-size: 2.75rem;
+}
+
+
+/* About page */
+.headshot{
+    width: 30%;
 }
 
 /* Pricing page */
@@ -796,6 +788,11 @@ color: rgb(187, 187, 187);
     font-size: 5.5rem;
 }
 
+.infrared-img-main{
+    margin: 6%;
+    width: 100%;
+}
+
 /* .massage-therapy-img{
     width: 85%;
 } */
@@ -833,7 +830,7 @@ color: rgb(187, 187, 187);
     font-size: 2.75rem;
 }
 
-.infrared-text-container{
+.infrared-text-container, .about-me-text-container{
     font-size: 1.2rem;
 }
 
@@ -869,25 +866,47 @@ color: rgb(187, 187, 187);
     font-size: 3vw;
 }
 
-.infrared-text-container{
+.infrared-text-container, .about-me-text-container{
     font-size: 1.2rem;
     line-height: 1.4;
 }
 
 .slide-caption{
-    font-size: 1.75vw;
+    font-size: 2.2vw;
     line-height: 1.4;
 }
+
+.headshot{
+    width: 100%;
+}
 }
 
 
 
-/* These media queries only affect carousel on main page */
+/* These media queries only affect carousel on main page and contact page */
 @media (min-aspect-ratio: 6/4) and (min-height: 460px){
+ /* Carousel items */
+.carousel-1-text{
+color: var(--dark-font) !important;
+display: block;
+font-size: 3.4vw;
+font-weight: 500;
+font-family: var(--serif-font);
+letter-spacing: 1.1px;
+position: absolute;
+text-shadow: 0 0 5px #a57817, 0 0 15px #996f35, 0 0 20px #996f35;
+top: 10%;
+white-space: nowrap;
+width: 100%;
+}
 
-    /* Only shows "Services" in navbar on landscape screen */
- .landscape-service-link{
-     display: inline-block;
+
+.fancy-align{
+    font-family: var(--cursive-font);
+    font-size: 4vw;
+    font-weight: 700;
+    position: relative;
+    text-shadow: 0 0 10px #a57817, 0 0 5px #996f35;
 }
 
 .landscape-slide-container{
@@ -900,8 +919,8 @@ color: rgb(187, 187, 187);
 .landscape-slide-img{
     display: block;
     min-height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: auto;
+    object-fit: contain;
 }
 
 .portrait-slide-container, .portrait-slide-img{
@@ -910,45 +929,34 @@ color: rgb(187, 187, 187);
 
 .carousel-indicators li {
     background-color: rgb(121, 60, 32);
-};
-
-.carousel-1-text{
-   font-size: 3.5vw;
-   text-shadow: 0 0 10px #a57817, 0 0 5px #996f35, 0 0 10px #996f35;
-   top: 10%;
 }
 
-.fancy-align{
-   font-size: 3rem;
-   font-weight: 400;
-   text-shadow: 0 0 20px #996f35;
-}
 
 .landscape-caption-stones{
     display: block;
 }
 
-.about-collage{
-    object-fit: contain;
-    height: 100%;
-    width: auto;
-}
-
 .about-carousel-caption{
-   font-family:'open_sansregular';
-   font-size: 1.3rem;
+   font-family: var(--serif-font);
+   font-size: 1.7vw;
    letter-spacing: 1px;
    line-height: 1.5;
-   width: 80%;
+   width: 85%;
 }
 
 .about-btn{
-    /* background-color: rgb(226, 195, 100); */
-    font-family:'open_sansregular';
-    font-size: 1.1rem;
-    margin-top: 10%;
+    font-family: var(--serif-font);
+    font-size: 1.6vw;
+    margin-top: 5%;
     -webkit-appearance: none;
 }
+
+
+    /* Only shows "Services" in navbar on landscape screen */
+ .landscape-service-link{
+     display: inline-block;
+}
+
 
 /* contact me page */
 .contact-page-landscape{
